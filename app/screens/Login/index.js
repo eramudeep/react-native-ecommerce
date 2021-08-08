@@ -8,6 +8,10 @@ import Label from '../../components/Label';
 import {appColors, shadow} from '../../utils/appColors';
 
 export default function index({navigation}) {
+  const onLogin  =()=>{
+   return navigation.navigate("Home")
+    
+  }
   return (
     <Container isScrollable>
       <View
@@ -79,7 +83,7 @@ export default function index({navigation}) {
             }}
           />
         </Pressable>
-        <CustomButton label="Sign in" />
+        <CustomButton onPress={onLogin} label="Sign in" />
       </View>
       <View
         style={{
@@ -95,8 +99,8 @@ export default function index({navigation}) {
           }}
         />
       </View>
-      <CustomButton icon="facebook" label="Sign in" unFilled />
-      <CustomButton icon="twitter" label="Sign in" unFilled />
+      <CustomButton onPress={onLogin} icon="facebook" label="Sign in" unFilled />
+      <CustomButton onPress={onLogin} icon="twitter" label="Sign in" unFilled />
     </Container>
   );
 }
