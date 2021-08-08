@@ -25,6 +25,7 @@
     "react-native-screens": "^2.16.1",
     "react-native-size-matters": "^0.4.0",
     "react-native-touch-ripple": "^0.0.4",
+    "react-native-vector-icons": "^8.1.0",
     "react-redux": "^7.2.2",
     "redux": "^4.0.5",
     "redux-persist": "^6.0.0",

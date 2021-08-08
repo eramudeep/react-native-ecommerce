@@ -17,7 +17,7 @@ export default function TabNavigationStack() {
       <Tab.Navigator
         tabBarOptions={{
           activeTintColor: appColors.primary,
-          inactiveTintColor: appColors.secondary,
+          inactiveTintColor: appColors.darkGray,
         }}>
         {RoutesList?.map((route, key) => {
           const {name, component, options} = route;

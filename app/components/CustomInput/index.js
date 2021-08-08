@@ -13,7 +13,7 @@ export default function CustomInput({
   IconRight,
   IconLeft,
   label,
-}) {
+}) { 
   const [focused, setFocused] = useState(false);
   const onFocus = () => {
     setFocused(!focused);
@@ -35,6 +35,7 @@ export default function CustomInput({
         style={[styles.input, InputStyle]}
         onBlur={onFocus}
         onFocus={onFocus}
+         
       />
       {IconRight && <IconRight />}
     </View>
@@ -54,9 +55,12 @@ const styles = StyleSheet.create({
     // ...shadow
   },
   input: {
+    //backgroundColor:'red',
+   // height:scale(90),
     paddingVertical: scale(10),
-    flex: 1,
-    fontSize: scale(14),
+   // flex: 1,
+     fontSize: scale(14),
+    
   },
   blurBorder:{
       borderColor:appColors.darkGray

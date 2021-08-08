@@ -1,10 +1,10 @@
 import React from 'react'
-import { ScrollView, StyleSheet, Text, View } from 'react-native'
+import { ScrollView, StyleSheet, Text, View,SafeAreaView } from 'react-native'
 import { scale } from 'react-native-size-matters'
 
 export default function Container({children,isScrollable}) {
     return (
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
             {
                 isScrollable? <ScrollView>
                     <View style={styles.innerView}>
@@ -14,7 +14,7 @@ export default function Container({children,isScrollable}) {
                 :
                 <View style={styles.innerView}>{children}</View>
             }
-        </View>
+        </SafeAreaView>
     )
 }
 const styles = StyleSheet.create({
