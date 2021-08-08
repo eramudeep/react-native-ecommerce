@@ -4,10 +4,13 @@
  */
 import Home from '../screens/Home';
 import Login from '../screens/Login';
+import SignUp from '../screens/SignUp';
+import Verification from '../screens/Verification';
+
 import {appColors} from '../utils/appColors';
 
 export const RoutesList = [
-  {
+  /* {
     name: 'Home',
     component: Home,
     options: {
@@ -16,17 +19,36 @@ export const RoutesList = [
       //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
     },
   },
-
+ */
   {
     name: 'Login',
     component: Login,
     options: {
+      tabBarVisible:false,  
       tabBarBadge: 3,
       tabBarLabel: 'Login',
       //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
     },
   },
+  {
+    name: 'SignUp',
+    component: SignUp,
+    options: {
+      tabBarVisible:false,  
+      tabBarBadge: 3,
+      tabBarLabel: 'SignUp',
+      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
+    },
+  },
 
-
-  
+  {
+    name: 'Verification',
+    component: Verification,
+    options: {
+      tabBarVisible:false,  
+      tabBarBadge: 3,
+      tabBarLabel: 'Verification',
+      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
+    },
+  },
 ];

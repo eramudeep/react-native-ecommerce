@@ -6,13 +6,16 @@ import CustomInput from '../../components/CustomInput';
 import CustomButton from '../../components/CustomButton';
 import Label from '../../components/Label';
 import {appColors, shadow} from '../../utils/appColors';
-
+import Feather from 'react-native-vector-icons/Feather';
 export default function index({navigation}) {
   return (
     <Container isScrollable>
+      <Pressable onPress={()=>navigation.goBack() } style={{marginTop: scale(30)}}>
+        <Feather name={'chevron-left'} size={scale(25)} />
+      </Pressable>
       <View
         style={{
-          marginTop: scale(50),
+          marginTop: scale(70),
           backgroundColor: appColors.white,
           ...shadow,
           padding: scale(15),
@@ -25,19 +28,9 @@ export default function index({navigation}) {
             alignItems: 'flex-end',
           }}>
           <Label
-            text="Welcome,"
+            text="Sign Up"
             style={{fontSize: scale(30), fontWeight: '700'}}
           />
-          <Pressable onPress={()=> navigation.navigate("SignUp")}>
-            <Label
-              text="Sign Up"
-              style={{
-                fontSize: scale(14),
-                fontWeight: '500',
-                color: appColors.primary,
-              }}
-            />
-          </Pressable>
         </View>
         <View style={{paddingVertical: scale(15)}}>
           <Label
@@ -48,6 +41,9 @@ export default function index({navigation}) {
               color: appColors.darkGray,
             }}
           />
+        </View>
+        <View style={{paddingVertical: scale(10)}}>
+          <CustomInput label="Name" placeholder="Amusoftech" />
         </View>
         <View style={{paddingVertical: scale(10)}}>
           <CustomInput
@@ -64,39 +60,8 @@ export default function index({navigation}) {
             value="*******"
           />
         </View>
-        <Pressable
-        onPress={()=>navigation.navigate("Verification")}
-          style={{
-            flexDirection: 'row',
-            justifyContent: 'flex-end',
-            paddingVertical: scale(10),
-          }}>
-          <Label
-            text="Forgot password"
-            style={{
-              fontSize: scale(14),
-              // fontWeight: '500',
-            }}
-          />
-        </Pressable>
-        <CustomButton label="Sign in" />
+        <CustomButton label="Sign up" />
       </View>
-      <View
-        style={{
-          justifyContent: 'center',
-          alignItems: 'center',
-          paddingVertical: scale(20),
-        }}>
-        <Label
-          text="-OR-"
-          style={{
-            fontSize: scale(18),
-            //fontWeight: '500',
-          }}
-        />
-      </View>
-      <CustomButton icon="facebook" label="Sign in" unFilled />
-      <CustomButton icon="twitter" label="Sign in" unFilled />
     </Container>
   );
 }
