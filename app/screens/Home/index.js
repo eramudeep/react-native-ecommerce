@@ -31,22 +31,10 @@ export default function Home() {
             text={"Welcome to  React native starter kit with redux"}/>
         </View>
         <ScrollView style={styles.scrollContainer}>
-          
-          <Label text={"What is React Native Starter?"} style={styles.TitleText}/>
-            {starterIntro.map((val,key)=>{
-                 return(
-                    <Label key={key} style={{fontSize:16,lineHeight:25,marginBottom:30 }} text={val}/>
-                 )
-             })}
-            <Label style={styles.TitleText} text={"What's inside"}/>
-             {features.map((val,key)=>{
-                 return(
-                    <Label key={key} text={`• ${val}`} style={{fontSize:18,lineHeight:36,fontWeight:"500" }}/>
-                 )
-             })}
+           
              <Divider isDark/>
-             <CustomInput placeholder={"enter text"} onChangeText={val=>setText(val)}/>
-          <CustomButton label={"Button"} onPress={()=>alert(text)}/>
+             <CustomInput label="Email" placeholder={"enter text"} onChangeText={val=>setText(val)}/>
+          <CustomButton  unFilled label={"Button"} onPress={()=>alert(text)}/>
         </ScrollView>
         
       </View>

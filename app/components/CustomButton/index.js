@@ -4,10 +4,10 @@ import { scale } from 'react-native-size-matters'
 import { appColors } from '../../utils/appColors'
 import TouchableRipple from 'react-native-touch-ripple'
 
-export default function index({label,style,onPress,labelStyle}) {
+export default function index({unFilled, label,style,onPress,labelStyle}) {
     return (
-        <TouchableRipple rippleColor={appColors.white} onPress={onPress} rippleDuration={800} style={[styles.container,style]}>
-            <Text style={[styles.label,labelStyle]}>{`${label}`.toUpperCase()}</Text>
+        <TouchableRipple rippleColor={appColors.white} onPress={onPress} rippleDuration={800} style={[styles.container,unFilled ?  styles.unFilled :{}, style]}>
+            <Text style={[styles.label,unFilled ? styles.unFilledLabel : {}, labelStyle]}>{`${label}`.toUpperCase()}</Text>
         </TouchableRipple>
     )
 }
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     container:{
         height:scale(50),
         backgroundColor:appColors.primary,
-        borderRadius:scale(30),
+        borderRadius:scale(5),
         justifyContent:"center",
         alignItems:"center",
         overflow:"hidden",
@@ -25,6 +25,16 @@ const styles = StyleSheet.create({
     label:{
         fontSize:scale(16),
         fontWeight:"500",
-        color:appColors.white
+        color:appColors.white,
+        letterSpacing:scale( 2)
+           
+    },
+    unFilled:{
+        backgroundColor:"transparent",
+        borderWidth:scale(0.7),
+        borderColor:appColors.primary
+    },
+    unFilledLabel:{
+        color:appColors.black,
     }
 })
