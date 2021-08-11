@@ -13,6 +13,7 @@ export default function CustomInput({
   IconRight,
   IconLeft,
   label,
+  containerStyle
 }) {
   const [focused, setFocused] = useState(false);
   const onFocus = () => {
@@ -21,7 +22,7 @@ export default function CustomInput({
   return (
     <View
       style={[
-        styles.container,
+        styles.container,containerStyle,
         focused ? styles.activeBorder : styles.blurBorder,
       ]}>
       {label && (

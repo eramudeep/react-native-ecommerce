@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {StyleSheet, Text, View, FlatList, Image} from 'react-native';
+import {StyleSheet, Text, View, FlatList, Image,Pressable} from 'react-native';
 import {} from 'react-native-gesture-handler';
 import {
   features,
@@ -14,28 +14,16 @@ import Container from '../../components/Container';
 
 import {scale} from 'react-native-size-matters';
 import SearchBox from '../../components/SearchBox';
+import TitleComp from '../../components/TitleComp';
 
-export default function Home() {
+export default function Home({navigation}) {
   const RenderTitle = ({heading, rightLabel}) => {
-    return (
-      <View
-        style={{
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-        }}>
-        <Label
-          text={heading}
-          style={{fontSize: scale(20), fontWeight: '600'}}
-        />
-        <Label text={rightLabel} style={{fontSize: scale(14)}} />
-      </View>
-    );
+    return ( <TitleComp heading={heading} rightLabel={rightLabel} /> );
   };
   const ProductCard = ({item}) => {
     const {name, description, price, image} = item;
     return (
-      <View style={{}}>
+      <Pressable onPress={()=>navigation.navigate("ProductDetails")} style={{}}>
         <View
           style={{
             height: scale(200),
@@ -65,7 +53,7 @@ export default function Home() {
             }}
           />
         </View>
-      </View>
+      </Pressable>
     );
   };
   return (
@@ -116,7 +104,7 @@ export default function Home() {
           ItemSeparatorComponent={() => <View style={{padding: scale(10)}} />}
           horizontal
           data={bestSellersList}
-          renderItem={({item, index}) => <ProductCard item={item} />}
+          renderItem={({item, index}) => <ProductCard key={index} item={item} />}
         />
       </View>
     </Container>

@@ -2,12 +2,18 @@
  * @author Amusoftech <er.amudeep@gmail.com>
  * @description List of routes for Tabs Navigator and Stack navigator, Along addational  Option for Tabs
  */
+ import React from 'react';
 import Home from '../screens/Home';
 import Login from '../screens/Login';
 import SignUp from '../screens/SignUp';
+import ProductDetails from '../screens/ProductDetails';
 import Verification from '../screens/Verification';
-
+import WriteReview from '../screens/WriteReview';
+import Cart from '../screens/Cart';
+import Checkout from '../screens/Checkout';
+import Feather from 'react-native-vector-icons/dist/Feather';
 import {appColors} from '../utils/appColors';
+import { scale } from 'react-native-size-matters';
 
 export const RoutesList = [
   
@@ -50,9 +56,66 @@ export const RoutesList = [
     name: 'Home',
     component: Home,
     options: {
-      tabBarBadge: 3,
+      //tabBarBadge: 3,
+      tabBarIcon: (props) => (
+        <Feather  name={'mouse-pointer'} size={scale(20)} color={appColors.primary} {...props} />
+      ), 
       tabBarLabel: 'Home',
       //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
     },
   },
+  {
+    name: 'Cart',
+    component: Cart,
+    options: {
+      //tabBarBadge: 3,
+      tabBarIcon: (props) => (
+        <Feather  name={'shopping-cart'} size={scale(20)} color={appColors.primary} {...props} />
+      ), 
+      tabBarLabel: 'Cart',
+      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
+    },
+  },
+
+  
+  {
+    name: 'ProductDetails',
+    component: ProductDetails,
+    options: {
+      tabBarButton: (props) => null,
+      tabBarVisible:false,  
+      tabBarBadge: 3,
+      tabBarLabel: 'ProductDetails',
+      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
+    },
+  },
+
+
+  {
+    name: 'WriteReview',
+    component: WriteReview,
+    options: {
+      tabBarButton: (props) => null,
+      tabBarVisible:false,  
+      tabBarBadge: 3,
+      tabBarLabel: 'WriteReview',
+      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
+    },
+  },
+
+
+  {
+    name: 'Checkout',
+    component: Checkout,
+    options: {
+      tabBarButton: (props) => null,
+      //tabBarVisible:false,   
+      //tabBarBadge: 3,
+      tabBarLabel: 'Checkout',
+      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
+    },
+  },
+
+  
+  
 ];

@@ -27,13 +27,49 @@ export const bestSellersList=[
         image: require("../static/images/products/2.png")
     },
     {
-        name :"Leather Wristwatch",
+        name :"Wrist watch",
         description :"Tag Heuer",
         price :"$499",
+        image: require("../static/images/products/2.png")
+    },
+    {
+        name :"Nike FIT Sleeve",
+        description :"Nike Dri-FIT longer.",
+        price :"$1500",
         image: require("../static/images/products/2.png")
     }
 
 ]
+
+
+export const productDetail= {
+        name :"Leather Wrist watch",
+        detail :"Nike Dri-FIT is a polyester fabric designed to help you keep dry so you can more comfortably work harder, longer.",
+        price :"$499",
+        size:"XL",
+        color:"blue",
+        image: require("../static/images/products/2.png"),
+        isFav:false
+    }
+
+
+    export const reviews=  [
+        {
+            name:"Amusoftech",
+            detail:"Wonderful jean, perfect gift for my girl for our anniversary!",
+            count:4,
+            image: require("../static/images/rate/1.png"),
+        },
+        {
+            name:"Aman Deep",
+            detail:"Nike Dri-FIT is a polyester fabric designed to help you ",
+            count:3,
+            image: require("../static/images/rate/1.png"),
+        }
+    ]
+
+
+ 
 export const categoriesList=[
     {
         label:"Men",
