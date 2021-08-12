@@ -1,9 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {StyleSheet, Text, View, FlatList, Image,Pressable} from 'react-native';
 import {} from 'react-native-gesture-handler';
-import {
-  features,
-  starterIntro,
+import { 
   categoriesList,
   bestSellersList,
 } from '../../utils/MockData';
@@ -11,6 +9,7 @@ import {appColors, shadow} from '../../utils/appColors';
 import TouchableRipple from 'react-native-touch-ripple';
 import Label from '../../components/Label';
 import Container from '../../components/Container';
+import Product  from '../../components/ProductCard';
 
 import {scale} from 'react-native-size-matters';
 import SearchBox from '../../components/SearchBox';
@@ -20,41 +19,8 @@ export default function Home({navigation}) {
   const RenderTitle = ({heading, rightLabel}) => {
     return ( <TitleComp heading={heading} rightLabel={rightLabel} /> );
   };
-  const ProductCard = ({item}) => {
-    const {name, description, price, image} = item;
-    return (
-      <Pressable onPress={()=>navigation.navigate("ProductDetails")} style={{}}>
-        <View
-          style={{
-            height: scale(200),
-            width: scale(150),
-            //backgroundColor:appColors.lightGray
-          }}>
-          <Image source={image} />
-        </View>
-        <View style={{paddingVertical: scale(3)}}>
-          <Label text={name} style={{fontSize: scale(18), fontWeight: '500'}} />
-        </View>
-
-        <View style={{paddingVertical: scale(2)}}>
-          <Label
-            text={description}
-            style={{fontSize: scale(13), color: appColors.darkGray}}
-          />
-        </View>
-
-        <View style={{paddingVertical: scale(5)}}>
-          <Label
-            text={price}
-            style={{
-              fontSize: scale(18),
-              color: appColors.primary,
-              fontWeight: '500',
-            }}
-          />
-        </View>
-      </Pressable>
-    );
+  const ProductCard = ({item}) => { 
+    return ( <Product navigation={navigation}  item={item} />);
   };
   return (
     <Container isScrollable style={styles.container}>
@@ -72,6 +38,7 @@ export default function Home({navigation}) {
             return (
               <View key={index} style={{alignItems: 'center'}}>
                 <TouchableRipple
+                  onPress={()=> navigation.navigate("Category",{item})}
                   rippleColor={appColors.primary}
                   rippleContainerBorderRadius={scale(40)}
                   rippleDuration={800}

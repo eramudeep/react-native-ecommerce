@@ -14,6 +14,7 @@ import Checkout from '../screens/Checkout';
 import Feather from 'react-native-vector-icons/dist/Feather';
 import {appColors} from '../utils/appColors';
 import { scale } from 'react-native-size-matters';
+import Category from '../screens/Category';
 
 export const RoutesList = [
   
@@ -112,6 +113,18 @@ export const RoutesList = [
       //tabBarVisible:false,   
       //tabBarBadge: 3,
       tabBarLabel: 'Checkout',
+      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
+    },
+  },
+
+  {
+    name: 'Category',
+    component: Category,
+    options: {
+      tabBarButton: (props) => null,
+      tabBarVisible:false,   
+      //tabBarBadge: 3,
+      tabBarLabel: 'Category',
       //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
     },
   },

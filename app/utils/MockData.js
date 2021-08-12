@@ -37,7 +37,13 @@ export const bestSellersList=[
         description :"Nike Dri-FIT longer.",
         price :"$1500",
         image: require("../static/images/products/2.png")
-    }
+    },
+    {
+        name :"BeoPlay Speaker",
+        description :"Bang and Olufsen",
+        price :"$755",
+        image: require("../static/images/products/2.png")
+    },
 
 ]
 
