@@ -4,7 +4,7 @@ import { scale } from 'react-native-size-matters'
 import { appColors } from '../utils/appColors'
 import CustomButton from '../components/CustomButton'
 import Label from './Label'
-export default function BottomButtons({buttonLabel,price,onPress}) {
+export default function BottomButtons({buttonLabel,priceLabel, price,onPress}) {
     return (
         <View
         style={{
@@ -15,16 +15,16 @@ export default function BottomButtons({buttonLabel,price,onPress}) {
           paddingHorizontal: scale(20),
           backgroundColor: appColors.white,
         }}>
-        <View>
+        <View style={{justifyContent:'center', alignItems:'center'}}>
           <Label
-            text="PRICE"
+            text={priceLabel ? priceLabel :"PRICE"}
             style={{
               fontSize: scale(14),
               opacity: scale(0.4),
               letterSpacing: scale(2),
             }}
           />
-          <Label
+          {price && <Label
             text={price}
             style={{
               fontSize: scale(18),
@@ -32,7 +32,7 @@ export default function BottomButtons({buttonLabel,price,onPress}) {
               color: appColors.primary,
               marginTop: scale(7),
             }}
-          />
+          />}
         </View>
         <CustomButton onPress={onPress&&onPress} label={buttonLabel} />
       </View>

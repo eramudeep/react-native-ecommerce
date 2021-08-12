@@ -17,7 +17,9 @@ import {PersistGate} from 'redux-persist/integration/react';
 import TabNavigationStack from './app/routing/TabNavigationStack';
 import {navigationTypeTabs} from './app.json';
 import Feather from 'react-native-vector-icons/Feather'; 
+import Ionicons from 'react-native-vector-icons/Ionicons'; 
 import FontAwesome from 'react-native-vector-icons/FontAwesome'; 
+Ionicons.loadFont()
 FontAwesome.loadFont()
 Feather.loadFont()
 const App: () => React$Node = () => {

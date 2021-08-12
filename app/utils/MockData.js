@@ -103,3 +103,15 @@ export const categoriesList=[
      
 
 ]
+export const topBrands=[
+    {
+        label : "Apple Inc",
+        products :"5693 Products",
+        icon:"logo-apple"
+    },
+    {
+        label : "Google Llc",
+        products :"6613 Products",
+        icon:"logo-google"
+    }
+]
