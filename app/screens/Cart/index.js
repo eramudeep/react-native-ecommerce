@@ -10,8 +10,9 @@ import BottomButtons from '../../components/BottomButtons';
 import {SwipeListView} from 'react-native-swipe-list-view';
 import Feather from 'react-native-vector-icons/Feather';
 import CheckOutItem from '../../components/CheckOutItem';
+import {connect} from 'react-redux';
 
-export default function index({navigation}) {
+function index({cartItems ,navigation}) {
   const ItemCard = ({item}) => {
     const {name, description, price, image} = item;
     return ( <CheckOutItem name={name} image={image} price={price} /> );
@@ -23,7 +24,7 @@ export default function index({navigation}) {
           <SwipeListView
             keyExtractor={(item) => `${item.name}_${new Date().getTime()}`}
             ItemSeparatorComponent={() => <View style={{padding: scale(10)}} />}
-            data={bestSellersList}
+            data={[cartItems]  || []}
             renderItem={({item, index}) => <ItemCard item={item} />}
             renderHiddenItem={(data, rowMap) => (
               <View
@@ -76,3 +77,11 @@ export default function index({navigation}) {
     </>
   );
 }
+
+const mapStateToProps = (state) => ({
+  cartItems : state.cart.cartItems
+});
+const mapDispatchToProps = { 
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(index);

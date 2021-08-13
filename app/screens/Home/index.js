@@ -1,26 +1,24 @@
 import React, {useEffect, useState} from 'react';
-import {StyleSheet, Text, View, FlatList, Image,Pressable} from 'react-native';
+import {StyleSheet, Text, View, FlatList, Image, Pressable} from 'react-native';
 import {} from 'react-native-gesture-handler';
-import { 
-  categoriesList,
-  bestSellersList,
-} from '../../utils/MockData';
+import {categoriesList, bestSellersList} from '../../utils/MockData';
 import {appColors, shadow} from '../../utils/appColors';
 import TouchableRipple from 'react-native-touch-ripple';
 import Label from '../../components/Label';
 import Container from '../../components/Container';
-import Product  from '../../components/ProductCard';
-
+import Product from '../../components/ProductCard';
+import {addToCart} from '../../redux/cartAction'
 import {scale} from 'react-native-size-matters';
 import SearchBox from '../../components/SearchBox';
 import TitleComp from '../../components/TitleComp';
+import {connect} from 'react-redux';
 
-export default function Home({navigation}) {
+function Home({addToCart$,navigation}) {
   const RenderTitle = ({heading, rightLabel}) => {
-    return ( <TitleComp heading={heading} rightLabel={rightLabel} /> );
+    return <TitleComp heading={heading} rightLabel={rightLabel} />;
   };
-  const ProductCard = ({item}) => { 
-    return ( <Product navigation={navigation}  item={item} />);
+  const ProductCard = ({item}) => {
+    return <Product navigation={navigation} item={item} />;
   };
   return (
     <Container isScrollable style={styles.container}>
@@ -38,7 +36,7 @@ export default function Home({navigation}) {
             return (
               <View key={index} style={{alignItems: 'center'}}>
                 <TouchableRipple
-                  onPress={()=> navigation.navigate("Category",{item})}
+                  onPress={() => navigation.navigate('Category', {item})}
                   rippleColor={appColors.primary}
                   rippleContainerBorderRadius={scale(40)}
                   rippleDuration={800}
@@ -71,13 +69,23 @@ export default function Home({navigation}) {
           ItemSeparatorComponent={() => <View style={{padding: scale(10)}} />}
           horizontal
           data={bestSellersList}
-          renderItem={({item, index}) => <ProductCard key={index} item={item} />}
+          renderItem={({item, index}) => (
+            <ProductCard key={index} item={item} />
+          )}
         />
       </View>
     </Container>
   );
 }
 
+const mapStateToProps = (state) => ({
+//no needed yet
+});
+const mapDispatchToProps = {
+  addToCart$:addToCart
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
 const styles = StyleSheet.create({
   container: {
     flex: 1,

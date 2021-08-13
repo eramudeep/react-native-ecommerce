@@ -10,11 +10,25 @@ import TitleComp from '../../components/TitleComp';
 import {productDetail} from '../../utils/MockData';
 import ReviewComp from '../../components/ReviewComp';
 import BottomButtons from '../../components/BottomButtons';
+import {connect} from 'react-redux';
+import {addToCart} from '../../redux/cartAction';
 
-export default function index({navigation}) {
+function index({cartItems ,addToCart$, navigation}) {
   const {name, detail, price, size, color, image, isFav} = productDetail;
+  console.warn({cartItems});
+  const onAddToCart = () => {
+    addToCart$(productDetail);
+  };
   const _renderBottom = () => {
-    return ( <BottomButtons onPress={()=> navigation.navigate("Cart")}  price={price} buttonLabel="ADD" />
+    return (
+      <BottomButtons
+        onPress={() => {
+          onAddToCart();
+          navigation.navigate('Cart');
+        }}
+        price={price}
+        buttonLabel="ADD"
+      />
     );
   };
   return (
@@ -55,7 +69,7 @@ export default function index({navigation}) {
             </View>
           </ImageBackground>
         </View>
-        <View style={{paddingHorizontal: scale(20), marginBottom:scale(100)}}>
+        <View style={{paddingHorizontal: scale(20), marginBottom: scale(100)}}>
           <View style={{paddingVertical: scale(20)}}>
             <Label
               text={name}
@@ -95,10 +109,11 @@ export default function index({navigation}) {
           </View>
           <View>
             <TitleComp heading={'Reviews'} />
-            <Pressable onPress={()=> navigation.navigate("WriteReview",{name}) }>
-                <Label text="Write your review" style={styles.wrtitle} />
+            <Pressable
+              onPress={() => navigation.navigate('WriteReview', {name})}>
+              <Label text="Write your review" style={styles.wrtitle} />
             </Pressable>
-          
+
             <ReviewComp />
           </View>
         </View>
@@ -108,6 +123,14 @@ export default function index({navigation}) {
   );
 }
 
+const mapStateToProps = (state) => ({
+   cartItems : state.cart.cartItems
+});
+const mapDispatchToProps = {
+  addToCart$: addToCart,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(index);
 const styles = StyleSheet.create({
   sizeContainer: {
     flex: 0.47,
