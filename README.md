@@ -1,5 +1,13 @@
-# react-native-redux-starter
-A starter boilerplate for a mobile app using React Native and Redux.
+# react-native-redux-ecommerce
+A starter boilerplate for a ecommerce mobile app using React Native and Redux.
+## YouTube
+- [Subscribe](https://www.youtube.com/channel/UCtyZ9z0ulUQsyP-wLrNyJ4A) `Subscribe for more`
+## Instagram
+- [Follow](https://www.instagram.com/amu.dev/) `Follow on IG`
+
+## Web
+- [Amusoftech](https://amusoftech.com/) `Visit us`
+
 ## Requirements
 - [Node](https://nodejs.org) `6.x` or newer
 - [React Native](http://facebook.github.io/react-native/docs/getting-started.html) for development
