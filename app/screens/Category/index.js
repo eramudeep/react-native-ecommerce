@@ -83,7 +83,7 @@ export default function index({navigation, route: {params}}) {
           />
         </View>
       </Container>
-      <BottomButtons priceLabel={'No Filter Applied'} buttonLabel="Filter" />
+      <BottomButtons onPress={()=> navigation.navigate("Filters")} priceLabel={'No Filter Applied'} buttonLabel="Filter" />
     </>
   );
 }

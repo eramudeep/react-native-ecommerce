@@ -115,3 +115,10 @@ export const topBrands=[
         icon:"logo-google"
     }
 ]
+/* export const filterList = [
+    {
+        label:"Popularity",
+        subLabel :"No Settings",
+        isOpen :false
+    }
+] */

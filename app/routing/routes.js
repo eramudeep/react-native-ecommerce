@@ -11,6 +11,8 @@ import Verification from '../screens/Verification';
 import WriteReview from '../screens/WriteReview';
 import Cart from '../screens/Cart';
 import Checkout from '../screens/Checkout';
+import Filters from '../screens/Filter';
+
 import Feather from 'react-native-vector-icons/dist/Feather';
 import {appColors} from '../utils/appColors';
 import { scale } from 'react-native-size-matters';
@@ -129,6 +131,18 @@ export const RoutesList = [
     },
   },
 
+  {
+    name: 'Filters',
+    component: Filters,
+    options: {
+      tabBarButton: (props) => null,
+      tabBarVisible:false,   
+      //tabBarBadge: 3,
+      tabBarLabel: 'Filters',
+      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
+    },
+  },
+  
   
   
 ];
