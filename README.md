@@ -1,4 +1,4 @@
-# react-native-redux-ecommerce
+# React-Native-Ecommerce
 A starter boilerplate for a ecommerce mobile app using React Native and Redux.
 ## YouTube
 - [Subscribe](https://www.youtube.com/channel/UCtyZ9z0ulUQsyP-wLrNyJ4A) `Subscribe for more`
@@ -7,6 +7,9 @@ A starter boilerplate for a ecommerce mobile app using React Native and Redux.
 
 ## Web
 - [Amusoftech](https://amusoftech.com/) `Visit us`
+
+## ❤️ SUPPORT
+- `Donate (Eth) : 021A827e911350a7133ac494F3D7D2281e0B75F9Food App` 
 
 ## Requirements
 - [Node](https://nodejs.org) `6.x` or newer
