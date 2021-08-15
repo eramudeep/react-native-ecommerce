@@ -136,3 +136,39 @@ export const deliveryTypes = [
   },
 ];
 export const paymentMethods = ['dollar-sign', 'credit-card', 'layout'];
+
+export const profileKeys=[
+  {
+    lebel:"Edit Profile",
+    icon:"edit-3"
+  },
+  {
+    lebel:"Shipping Address",
+    icon:"map-pin"
+  },
+  {
+    lebel:"Wishlist",
+    icon:"heart",
+    isNew:true,
+  },
+  {
+    lebel:"Order History",
+    icon:"clock"
+  },
+  {
+    lebel:"Track Order",
+    icon:"package"
+  },
+  {
+    lebel:"Cards",
+    icon:"credit-card"
+  },
+  {
+    lebel:"Notifications",
+    icon:"bell"
+  },
+  {
+    lebel:"Sign Out",
+    icon:"log-out"
+  }
+]
