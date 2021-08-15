@@ -8,8 +8,10 @@ A starter boilerplate for a ecommerce mobile app using React Native and Redux.
 ## Web
 - [Amusoftech](https://amusoftech.com/) `Visit us`
 
-## ❤️ SUPPORT
+## ❤️ Support us
 - `Donate (Eth) : 021A827e911350a7133ac494F3D7D2281e0B75F9Food App` 
+## Screens
+![Welcome](/screens-shots/Welcome.jpg?raw=true "Welcome Screen")
 
 ## Requirements
 - [Node](https://nodejs.org) `6.x` or newer
