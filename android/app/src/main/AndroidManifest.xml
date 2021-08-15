@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.react_native_redux_starter">
+  package="com.amusoftech.shop">
 
     <uses-permission android:name="android.permission.INTERNET" />
 

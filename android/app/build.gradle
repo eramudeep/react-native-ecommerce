@@ -129,7 +129,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.react_native_redux_starter"
+        applicationId "com.amusoftech.shop"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

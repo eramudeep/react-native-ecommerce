@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00161C363911308DC60C5CA6 /* libPods-react_native_redux_starter-react_native_redux_starterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 798DA666EB7745526FE3DBFC /* libPods-react_native_redux_starter-react_native_redux_starterTests.a */; };
-		00E356F31AD99517003FC87E /* react_native_redux_starterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* react_native_redux_starterTests.m */; };
+		00161C363911308DC60C5CA6 /* libPods-Amusoftech-AmusoftechTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 798DA666EB7745526FE3DBFC /* libPods-Amusoftech-AmusoftechTests.a */; };
+		00E356F31AD99517003FC87E /* AmusoftechTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AmusoftechTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		16DF76F5D99A03FE017C977C /* libPods-react_native_redux_starter-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9A444BEDE77A98C6F01D35 /* libPods-react_native_redux_starter-tvOSTests.a */; };
+		16DF76F5D99A03FE017C977C /* libPods-Amusoftech-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9A444BEDE77A98C6F01D35 /* libPods-Amusoftech-tvOSTests.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* react_native_redux_starterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* react_native_redux_starterTests.m */; };
+		2DCD954D1E0B4F2C00145EB5 /* AmusoftechTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AmusoftechTests.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		9C57445EF2F705B9829B18F2 /* libPods-react_native_redux_starter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 416BDC75A773531B80873674 /* libPods-react_native_redux_starter.a */; };
-		D8C13670DC93C8C644E4C2FD /* libPods-react_native_redux_starter-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD12629B1B3195144E766520 /* libPods-react_native_redux_starter-tvOS.a */; };
+		9C57445EF2F705B9829B18F2 /* libPods-Amusoftech.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 416BDC75A773531B80873674 /* libPods-Amusoftech.a */; };
+		D8C13670DC93C8C644E4C2FD /* libPods-Amusoftech-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD12629B1B3195144E766520 /* libPods-Amusoftech-tvOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,43 +28,43 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = react_native_redux_starter;
+			remoteInfo = Amusoftech;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "react_native_redux_starter-tvOS";
+			remoteInfo = "Amusoftech-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* react_native_redux_starterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = react_native_redux_starterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* AmusoftechTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmusoftechTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* react_native_redux_starterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = react_native_redux_starterTests.m; sourceTree = "<group>"; };
-		0F3D9FE11198A8A1B20CD5DA /* Pods-react_native_redux_starter-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_redux_starter-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-react_native_redux_starter-tvOSTests/Pods-react_native_redux_starter-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* react_native_redux_starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = react_native_redux_starter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = react_native_redux_starter/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = react_native_redux_starter/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = react_native_redux_starter/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = react_native_redux_starter/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = react_native_redux_starter/main.m; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* react_native_redux_starter-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "react_native_redux_starter-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* react_native_redux_starter-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "react_native_redux_starter-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		416BDC75A773531B80873674 /* libPods-react_native_redux_starter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-react_native_redux_starter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		50FD608A2800E48EDBB476A6 /* Pods-react_native_redux_starter-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_redux_starter-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-react_native_redux_starter-tvOS/Pods-react_native_redux_starter-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		586D8638B90C41E07FC50BF8 /* Pods-react_native_redux_starter-react_native_redux_starterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_redux_starter-react_native_redux_starterTests.debug.xcconfig"; path = "Target Support Files/Pods-react_native_redux_starter-react_native_redux_starterTests/Pods-react_native_redux_starter-react_native_redux_starterTests.debug.xcconfig"; sourceTree = "<group>"; };
-		6835A536F5723BE782A079FF /* Pods-react_native_redux_starter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_redux_starter.debug.xcconfig"; path = "Target Support Files/Pods-react_native_redux_starter/Pods-react_native_redux_starter.debug.xcconfig"; sourceTree = "<group>"; };
-		73F5549D59B484F0652BEEF0 /* Pods-react_native_redux_starter-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_redux_starter-tvOS.release.xcconfig"; path = "Target Support Files/Pods-react_native_redux_starter-tvOS/Pods-react_native_redux_starter-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		798DA666EB7745526FE3DBFC /* libPods-react_native_redux_starter-react_native_redux_starterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-react_native_redux_starter-react_native_redux_starterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D2598DDA0298C894F76CFF5 /* Pods-react_native_redux_starter-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_redux_starter-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-react_native_redux_starter-tvOSTests/Pods-react_native_redux_starter-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = react_native_redux_starter/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8DE4DC57646607077082B95E /* Pods-react_native_redux_starter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_redux_starter.release.xcconfig"; path = "Target Support Files/Pods-react_native_redux_starter/Pods-react_native_redux_starter.release.xcconfig"; sourceTree = "<group>"; };
-		A35804C17F83F93DD8110337 /* Pods-react_native_redux_starter-react_native_redux_starterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_redux_starter-react_native_redux_starterTests.release.xcconfig"; path = "Target Support Files/Pods-react_native_redux_starter-react_native_redux_starterTests/Pods-react_native_redux_starter-react_native_redux_starterTests.release.xcconfig"; sourceTree = "<group>"; };
-		CD12629B1B3195144E766520 /* libPods-react_native_redux_starter-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-react_native_redux_starter-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC9A444BEDE77A98C6F01D35 /* libPods-react_native_redux_starter-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-react_native_redux_starter-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F21AD99517003FC87E /* AmusoftechTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmusoftechTests.m; sourceTree = "<group>"; };
+		0F3D9FE11198A8A1B20CD5DA /* Pods-Amusoftech-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amusoftech-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Amusoftech-tvOSTests/Pods-Amusoftech-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Amusoftech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amusoftech.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Amusoftech/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Amusoftech/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Amusoftech/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Amusoftech/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Amusoftech/main.m; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* Amusoftech-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amusoftech-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* Amusoftech-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Amusoftech-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		416BDC75A773531B80873674 /* libPods-Amusoftech.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Amusoftech.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50FD608A2800E48EDBB476A6 /* Pods-Amusoftech-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amusoftech-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Amusoftech-tvOS/Pods-Amusoftech-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		586D8638B90C41E07FC50BF8 /* Pods-Amusoftech-AmusoftechTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amusoftech-AmusoftechTests.debug.xcconfig"; path = "Target Support Files/Pods-Amusoftech-AmusoftechTests/Pods-Amusoftech-AmusoftechTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6835A536F5723BE782A079FF /* Pods-Amusoftech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amusoftech.debug.xcconfig"; path = "Target Support Files/Pods-Amusoftech/Pods-Amusoftech.debug.xcconfig"; sourceTree = "<group>"; };
+		73F5549D59B484F0652BEEF0 /* Pods-Amusoftech-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amusoftech-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Amusoftech-tvOS/Pods-Amusoftech-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		798DA666EB7745526FE3DBFC /* libPods-Amusoftech-AmusoftechTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Amusoftech-AmusoftechTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D2598DDA0298C894F76CFF5 /* Pods-Amusoftech-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amusoftech-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Amusoftech-tvOSTests/Pods-Amusoftech-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Amusoftech/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8DE4DC57646607077082B95E /* Pods-Amusoftech.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amusoftech.release.xcconfig"; path = "Target Support Files/Pods-Amusoftech/Pods-Amusoftech.release.xcconfig"; sourceTree = "<group>"; };
+		A35804C17F83F93DD8110337 /* Pods-Amusoftech-AmusoftechTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amusoftech-AmusoftechTests.release.xcconfig"; path = "Target Support Files/Pods-Amusoftech-AmusoftechTests/Pods-Amusoftech-AmusoftechTests.release.xcconfig"; sourceTree = "<group>"; };
+		CD12629B1B3195144E766520 /* libPods-Amusoftech-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Amusoftech-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC9A444BEDE77A98C6F01D35 /* libPods-Amusoftech-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Amusoftech-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00161C363911308DC60C5CA6 /* libPods-react_native_redux_starter-react_native_redux_starterTests.a in Frameworks */,
+				00161C363911308DC60C5CA6 /* libPods-Amusoftech-AmusoftechTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C57445EF2F705B9829B18F2 /* libPods-react_native_redux_starter.a in Frameworks */,
+				9C57445EF2F705B9829B18F2 /* libPods-Amusoftech.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8C13670DC93C8C644E4C2FD /* libPods-react_native_redux_starter-tvOS.a in Frameworks */,
+				D8C13670DC93C8C644E4C2FD /* libPods-Amusoftech-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,20 +98,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16DF76F5D99A03FE017C977C /* libPods-react_native_redux_starter-tvOSTests.a in Frameworks */,
+				16DF76F5D99A03FE017C977C /* libPods-Amusoftech-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* react_native_redux_starterTests */ = {
+		00E356EF1AD99517003FC87E /* AmusoftechTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* react_native_redux_starterTests.m */,
+				00E356F21AD99517003FC87E /* AmusoftechTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = react_native_redux_starterTests;
+			path = AmusoftechTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -122,7 +122,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* react_native_redux_starter */ = {
+		13B07FAE1A68108700A75B9A /* Amusoftech */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -133,22 +133,21 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = react_native_redux_starter;
+			name = Amusoftech;
 			sourceTree = "<group>";
 		};
 		16FA5AD817C8033E77EAEA9E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6835A536F5723BE782A079FF /* Pods-react_native_redux_starter.debug.xcconfig */,
-				8DE4DC57646607077082B95E /* Pods-react_native_redux_starter.release.xcconfig */,
-				586D8638B90C41E07FC50BF8 /* Pods-react_native_redux_starter-react_native_redux_starterTests.debug.xcconfig */,
-				A35804C17F83F93DD8110337 /* Pods-react_native_redux_starter-react_native_redux_starterTests.release.xcconfig */,
-				50FD608A2800E48EDBB476A6 /* Pods-react_native_redux_starter-tvOS.debug.xcconfig */,
-				73F5549D59B484F0652BEEF0 /* Pods-react_native_redux_starter-tvOS.release.xcconfig */,
-				0F3D9FE11198A8A1B20CD5DA /* Pods-react_native_redux_starter-tvOSTests.debug.xcconfig */,
-				7D2598DDA0298C894F76CFF5 /* Pods-react_native_redux_starter-tvOSTests.release.xcconfig */,
+				6835A536F5723BE782A079FF /* Pods-Amusoftech.debug.xcconfig */,
+				8DE4DC57646607077082B95E /* Pods-Amusoftech.release.xcconfig */,
+				586D8638B90C41E07FC50BF8 /* Pods-Amusoftech-AmusoftechTests.debug.xcconfig */,
+				A35804C17F83F93DD8110337 /* Pods-Amusoftech-AmusoftechTests.release.xcconfig */,
+				50FD608A2800E48EDBB476A6 /* Pods-Amusoftech-tvOS.debug.xcconfig */,
+				73F5549D59B484F0652BEEF0 /* Pods-Amusoftech-tvOS.release.xcconfig */,
+				0F3D9FE11198A8A1B20CD5DA /* Pods-Amusoftech-tvOSTests.debug.xcconfig */,
+				7D2598DDA0298C894F76CFF5 /* Pods-Amusoftech-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -157,10 +156,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				416BDC75A773531B80873674 /* libPods-react_native_redux_starter.a */,
-				798DA666EB7745526FE3DBFC /* libPods-react_native_redux_starter-react_native_redux_starterTests.a */,
-				CD12629B1B3195144E766520 /* libPods-react_native_redux_starter-tvOS.a */,
-				EC9A444BEDE77A98C6F01D35 /* libPods-react_native_redux_starter-tvOSTests.a */,
+				416BDC75A773531B80873674 /* libPods-Amusoftech.a */,
+				798DA666EB7745526FE3DBFC /* libPods-Amusoftech-AmusoftechTests.a */,
+				CD12629B1B3195144E766520 /* libPods-Amusoftech-tvOS.a */,
+				EC9A444BEDE77A98C6F01D35 /* libPods-Amusoftech-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,9 +174,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* react_native_redux_starter */,
+				13B07FAE1A68108700A75B9A /* Amusoftech */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* react_native_redux_starterTests */,
+				00E356EF1AD99517003FC87E /* AmusoftechTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				16FA5AD817C8033E77EAEA9E /* Pods */,
@@ -190,10 +189,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* react_native_redux_starter.app */,
-				00E356EE1AD99517003FC87E /* react_native_redux_starterTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* react_native_redux_starter-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* react_native_redux_starter-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* Amusoftech.app */,
+				00E356EE1AD99517003FC87E /* AmusoftechTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* Amusoftech-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* Amusoftech-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,9 +200,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* react_native_redux_starterTests */ = {
+		00E356ED1AD99517003FC87E /* AmusoftechTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "react_native_redux_starterTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "AmusoftechTests" */;
 			buildPhases = (
 				35F9E4F6455B4A40D5688542 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -216,14 +215,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = react_native_redux_starterTests;
-			productName = react_native_redux_starterTests;
-			productReference = 00E356EE1AD99517003FC87E /* react_native_redux_starterTests.xctest */;
+			name = AmusoftechTests;
+			productName = AmusoftechTests;
+			productReference = 00E356EE1AD99517003FC87E /* AmusoftechTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* react_native_redux_starter */ = {
+		13B07F861A680F5B00A75B9A /* Amusoftech */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "react_native_redux_starter" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Amusoftech" */;
 			buildPhases = (
 				50C8C6213BE23173AAF6560A /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -237,14 +236,14 @@
 			);
 			dependencies = (
 			);
-			name = react_native_redux_starter;
-			productName = react_native_redux_starter;
-			productReference = 13B07F961A680F5B00A75B9A /* react_native_redux_starter.app */;
+			name = Amusoftech;
+			productName = Amusoftech;
+			productReference = 13B07F961A680F5B00A75B9A /* Amusoftech.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* react_native_redux_starter-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* Amusoftech-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "react_native_redux_starter-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Amusoftech-tvOS" */;
 			buildPhases = (
 				E873659E56BC75E3AB3196CF /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -257,14 +256,14 @@
 			);
 			dependencies = (
 			);
-			name = "react_native_redux_starter-tvOS";
-			productName = "react_native_redux_starter-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* react_native_redux_starter-tvOS.app */;
+			name = "Amusoftech-tvOS";
+			productName = "Amusoftech-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* Amusoftech-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* react_native_redux_starter-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* Amusoftech-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "react_native_redux_starter-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Amusoftech-tvOSTests" */;
 			buildPhases = (
 				3330C58887084A97306E24E8 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -276,9 +275,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "react_native_redux_starter-tvOSTests";
-			productName = "react_native_redux_starter-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* react_native_redux_starter-tvOSTests.xctest */;
+			name = "Amusoftech-tvOSTests";
+			productName = "Amusoftech-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* Amusoftech-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -307,7 +306,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "react_native_redux_starter" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Amusoftech" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -320,10 +319,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* react_native_redux_starter */,
-				00E356ED1AD99517003FC87E /* react_native_redux_starterTests */,
-				2D02E47A1E0B4A5D006451C7 /* react_native_redux_starter-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* react_native_redux_starter-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* Amusoftech */,
+				00E356ED1AD99517003FC87E /* AmusoftechTests */,
+				2D02E47A1E0B4A5D006451C7 /* Amusoftech-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* Amusoftech-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -375,7 +374,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		12330E5034E50D6326741C5E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -383,7 +382,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-react_native_redux_starter-react_native_redux_starterTests/Pods-react_native_redux_starter-react_native_redux_starterTests-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Amusoftech-AmusoftechTests/Pods-Amusoftech-AmusoftechTests-resources.sh",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -424,7 +423,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-react_native_redux_starter-react_native_redux_starterTests/Pods-react_native_redux_starter-react_native_redux_starterTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Amusoftech-AmusoftechTests/Pods-Amusoftech-AmusoftechTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
@@ -456,7 +455,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-react_native_redux_starter-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Amusoftech-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -478,7 +477,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-react_native_redux_starter-react_native_redux_starterTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Amusoftech-AmusoftechTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -500,7 +499,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-react_native_redux_starter-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Amusoftech-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -513,7 +512,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-react_native_redux_starter/Pods-react_native_redux_starter-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Amusoftech/Pods-Amusoftech-resources.sh",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -554,7 +553,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-react_native_redux_starter/Pods-react_native_redux_starter-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Amusoftech/Pods-Amusoftech-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E873659E56BC75E3AB3196CF /* [CP] Check Pods Manifest.lock */ = {
@@ -572,7 +571,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-react_native_redux_starter-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Amusoftech-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -624,7 +623,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* react_native_redux_starterTests.m in Sources */,
+				00E356F31AD99517003FC87E /* AmusoftechTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,7 +649,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* react_native_redux_starterTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* AmusoftechTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,12 +658,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* react_native_redux_starter */;
+			target = 13B07F861A680F5B00A75B9A /* Amusoftech */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* react_native_redux_starter-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* Amusoftech-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -672,14 +671,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 586D8638B90C41E07FC50BF8 /* Pods-react_native_redux_starter-react_native_redux_starterTests.debug.xcconfig */;
+			baseConfigurationReference = 586D8638B90C41E07FC50BF8 /* Pods-Amusoftech-AmusoftechTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = react_native_redux_starterTests/Info.plist;
+				INFOPLIST_FILE = AmusoftechTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -689,17 +688,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/react_native_redux_starter.app/react_native_redux_starter";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Amusoftech.app/Amusoftech";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A35804C17F83F93DD8110337 /* Pods-react_native_redux_starter-react_native_redux_starterTests.release.xcconfig */;
+			baseConfigurationReference = A35804C17F83F93DD8110337 /* Pods-Amusoftech-AmusoftechTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = react_native_redux_starterTests/Info.plist;
+				INFOPLIST_FILE = AmusoftechTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -709,27 +708,27 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/react_native_redux_starter.app/react_native_redux_starter";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Amusoftech.app/Amusoftech";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6835A536F5723BE782A079FF /* Pods-react_native_redux_starter.debug.xcconfig */;
+			baseConfigurationReference = 6835A536F5723BE782A079FF /* Pods-Amusoftech.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = react_native_redux_starter/Info.plist;
+				INFOPLIST_FILE = Amusoftech/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = react_native_redux_starter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amusoftech.shop;
+				PRODUCT_NAME = Amusoftech;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -738,20 +737,20 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DE4DC57646607077082B95E /* Pods-react_native_redux_starter.release.xcconfig */;
+			baseConfigurationReference = 8DE4DC57646607077082B95E /* Pods-Amusoftech.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = react_native_redux_starter/Info.plist;
+				INFOPLIST_FILE = Amusoftech/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = react_native_redux_starter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amusoftech.shop;
+				PRODUCT_NAME = Amusoftech;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -759,7 +758,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50FD608A2800E48EDBB476A6 /* Pods-react_native_redux_starter-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 50FD608A2800E48EDBB476A6 /* Pods-Amusoftech-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -770,14 +769,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "react_native_redux_starter-tvOS/Info.plist";
+				INFOPLIST_FILE = "Amusoftech-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.react_native_redux_starter-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.Amusoftech-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -787,7 +786,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73F5549D59B484F0652BEEF0 /* Pods-react_native_redux_starter-tvOS.release.xcconfig */;
+			baseConfigurationReference = 73F5549D59B484F0652BEEF0 /* Pods-Amusoftech-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -798,14 +797,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "react_native_redux_starter-tvOS/Info.plist";
+				INFOPLIST_FILE = "Amusoftech-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.react_native_redux_starter-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.Amusoftech-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -815,7 +814,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F3D9FE11198A8A1B20CD5DA /* Pods-react_native_redux_starter-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 0F3D9FE11198A8A1B20CD5DA /* Pods-Amusoftech-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -825,24 +824,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "react_native_redux_starter-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Amusoftech-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.react_native_redux_starter-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.Amusoftech-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/react_native_redux_starter-tvOS.app/react_native_redux_starter-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Amusoftech-tvOS.app/Amusoftech-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D2598DDA0298C894F76CFF5 /* Pods-react_native_redux_starter-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 7D2598DDA0298C894F76CFF5 /* Pods-Amusoftech-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -852,17 +851,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "react_native_redux_starter-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Amusoftech-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.react_native_redux_starter-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.Amusoftech-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/react_native_redux_starter-tvOS.app/react_native_redux_starter-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Amusoftech-tvOS.app/Amusoftech-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -983,7 +982,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "react_native_redux_starterTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "AmusoftechTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -992,7 +991,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "react_native_redux_starter" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Amusoftech" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1001,7 +1000,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "react_native_redux_starter-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Amusoftech-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -1010,7 +1009,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "react_native_redux_starter-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Amusoftech-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -1019,7 +1018,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "react_native_redux_starter" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Amusoftech" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

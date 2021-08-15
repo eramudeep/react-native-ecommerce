@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface react_native_redux_starterTests : XCTestCase
+@interface AmusoftechTests : XCTestCase
 
 @end
 
-@implementation react_native_redux_starterTests
+@implementation AmusoftechTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL(^)(UIView *view))test
 {

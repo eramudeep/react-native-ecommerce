@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "react_native_redux_starter-tvOS.app"
-               BlueprintName = "react_native_redux_starter-tvOS"
-               ReferencedContainer = "container:react_native_redux_starter.xcodeproj">
+               BuildableName = "Amusoftech-tvOS.app"
+               BlueprintName = "Amusoftech-tvOS"
+               ReferencedContainer = "container:Amusoftech.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "react_native_redux_starter-tvOSTests.xctest"
-               BlueprintName = "react_native_redux_starter-tvOSTests"
-               ReferencedContainer = "container:react_native_redux_starter.xcodeproj">
+               BuildableName = "Amusoftech-tvOSTests.xctest"
+               BlueprintName = "Amusoftech-tvOSTests"
+               ReferencedContainer = "container:Amusoftech.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "react_native_redux_starter-tvOS.app"
-            BlueprintName = "react_native_redux_starter-tvOS"
-            ReferencedContainer = "container:react_native_redux_starter.xcodeproj">
+            BuildableName = "Amusoftech-tvOS.app"
+            BlueprintName = "Amusoftech-tvOS"
+            ReferencedContainer = "container:Amusoftech.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "react_native_redux_starter-tvOS.app"
-            BlueprintName = "react_native_redux_starter-tvOS"
-            ReferencedContainer = "container:react_native_redux_starter.xcodeproj">
+            BuildableName = "Amusoftech-tvOS.app"
+            BlueprintName = "Amusoftech-tvOS"
+            ReferencedContainer = "container:Amusoftech.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
