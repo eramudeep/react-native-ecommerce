@@ -15,7 +15,10 @@ const {height} = Dimensions.get('window');
 export default function CheckOutSteper({navigation}) {
   const [active, setActive] = useState(0);
 
-  const onFinish = () => {};
+  const onFinish = () => {
+    navigation.navigate("Summary")
+     //Summary
+  };
   return (
     <Container>
       <ScreenHeader label="Checkout" navigation={navigation} />

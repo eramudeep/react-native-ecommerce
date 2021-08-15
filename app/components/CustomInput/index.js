@@ -30,7 +30,8 @@ export default function CustomInput({
           <Label style={{color: appColors.darkGray}} text={label} />
         </View>
       )}
-      {IconLeft && <IconLeft />}
+      <View style={{flexDirection:'row', justifyContent:'space-between', alignItems:'center'}}>
+          {IconLeft && <IconLeft />}
       <TextInput
         placeholder={placeholder}
         value={value}
@@ -42,6 +43,8 @@ export default function CustomInput({
         onFocus={onFocus}
       />
       {IconRight && <IconRight />}
+      </View>
+    
     </View>
   );
 }

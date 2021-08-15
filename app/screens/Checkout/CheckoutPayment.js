@@ -7,6 +7,7 @@ import { paymentMethods } from '../../utils/MockData';
 import CustomInput from '../../components/CustomInput';
 import CheckBox from '../../components/CheckBox';
 import Label from '../../components/Label';
+import { color } from 'react-native-reanimated';
 export default function CheckoutPayment() {
     const [selectedMethod, setSelectedMethod] = useState("credit-card")
   const SquareCard = ({item}) => {
@@ -25,6 +26,9 @@ export default function CheckoutPayment() {
       <View style={{paddingVertical: scale(10)}}>
            <CustomInput containerStyle={{backgroundColor: 'transparent'}} value="Amusoftech" label="Name on card"   />
       </View>
+      <View style={{paddingVertical: scale(10)}}>
+           <CustomInput containerStyle={{backgroundColor: 'transparent'}} value="4560   5674   3224   4543" label="Name on card"  IconRight={()=> <Feather name="credit-card"  color={appColors.primary} size={scale(20) }/> }  />
+      </View>
 
       <View style={{paddingVertical: scale(10)}}>
            <View style={{flexDirection:'row', justifyContent:'space-between', alignItems:'center'}}>
@@ -37,7 +41,7 @@ export default function CheckoutPayment() {
         <CheckBox isChecked={true} /> 
         <View style={{paddingLeft:scale(10)}}>
         <Label text="Save this card details" style={{fontSize:scale(15)}} />
-        </View>
+        </View> 
       </View>
 
     </View>

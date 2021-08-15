@@ -15,6 +15,7 @@ import Filters from '../screens/Filter';
 import Search from '../screens/Search';
 import CheckoutDelivery from '../screens/Checkout/CheckoutDelivery';
 import CheckOutSteper from '../screens/Checkout/CheckOutSteper';
+import Summary from '../screens/Summary';
 
 import Feather from 'react-native-vector-icons/dist/Feather';
 import {appColors} from '../utils/appColors';
@@ -186,4 +187,18 @@ export const RoutesList = [
       //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
     },
   },
+
+  {
+    name: 'Summary',
+    component: Summary,
+    options: {
+      tabBarButton: (props) => null,
+      tabBarVisible: false,
+      //tabBarBadge: 3,
+      tabBarLabel: 'Summary',
+      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
+    },
+  },
+
+  
 ];
