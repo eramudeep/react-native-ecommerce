@@ -11,7 +11,7 @@ export default function ProductCard({navigation, item}) {
       <View
         style={{
           height: scale(200),
-          width: scale(150),
+           width: scale(160),
           //backgroundColor:appColors.lightGray
         }}>
         <Image source={image} />

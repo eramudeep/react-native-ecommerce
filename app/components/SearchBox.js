@@ -3,7 +3,7 @@ import {View, Pressable, TextInput} from 'react-native';
 import {scale} from 'react-native-size-matters';
 import {appColors} from '../utils/appColors';
 import Feather from 'react-native-vector-icons/Feather';
-export default function SearchBox({autoFocus,onFoucs, hideCamra}) {
+export default function SearchBox({autoFocus,onFoucs, hideCamra, onRightIconPress,rightIcon}) {
   return (
     <View style={{justifyContent: 'space-between', flexDirection: 'row', alignItems:'center',}}>
       <View
@@ -26,6 +26,7 @@ export default function SearchBox({autoFocus,onFoucs, hideCamra}) {
       </View>
       {!hideCamra && (
         <Pressable
+          onPress={onRightIconPress&&onRightIconPress}
           style={{
             borderRadius: scale(20),
             width: scale(40),
@@ -35,7 +36,7 @@ export default function SearchBox({autoFocus,onFoucs, hideCamra}) {
             alignItems: 'center',
             marginLeft:scale(20)
           }}>
-          <Feather name="camera" size={scale(18)} color={appColors.white} />
+          <Feather name={rightIcon ? rightIcon :"camera"} size={scale(18)} color={appColors.white} />
         </Pressable>
       )}
     </View>

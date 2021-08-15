@@ -59,7 +59,7 @@ export default function index({navigation, route: {params}}) {
   };
   return (
     <>
-      <Container>
+      <Container isScrollable>
         {_renderHeader()}
         <View style={{paddingVertical: scale(20)}}>
           <TitleComp heading={'Top Brands'} />
@@ -68,9 +68,11 @@ export default function index({navigation, route: {params}}) {
             <FlatList showsHorizontalScrollIndicator={false} ItemSeparatorComponent={()=> <View style={{padding:scale(10)}} /> } horizontal data={topBrands}  renderItem={({item,index})=><BrandCard key={index} item={item}/> } />
           </View>
         </View>
-        <View style={{flex: 1}}>
-          <FlatList
+        <View style={{flex: 1, marginBottom:scale(50),   alignItems:'center'}}>
+          <FlatList 
+            nestedScrollEnabled
             showsVerticalScrollIndicator={false}
+            ItemSeparatorComponent={()=> <View style={{padding:scale(10) }} />}
             numColumns={2}
             data={bestSellersList}
             renderItem={({item, index}) => (

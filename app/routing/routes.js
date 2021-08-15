@@ -228,7 +228,7 @@ export const RoutesList = [
     component: Orders,
     options: {
       tabBarButton: (props) => null,
-      tabBarVisible: false,
+      //tabBarVisible: false,
       //tabBarBadge: 3,
       tabBarLabel: 'Orders',
       //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options

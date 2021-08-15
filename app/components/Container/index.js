@@ -4,9 +4,9 @@ import { scale } from 'react-native-size-matters'
 
 export default function Container({children,isScrollable,bodyStyle}) {
     return (
-        <SafeAreaView style={styles.container}>
+        <SafeAreaView  style={styles.container}>
             {
-                isScrollable? <ScrollView nestedScrollEnabled>
+                isScrollable? <ScrollView showsVerticalScrollIndicator={false} nestedScrollEnabled>
                     <View style={[styles.innerView,bodyStyle]}>
                         {children}
                     </View>

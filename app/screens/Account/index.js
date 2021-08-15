@@ -13,7 +13,7 @@ export default function index({navigation}) {
     return (
       <Pressable onPress={() =>route&& navigation.navigate(route)} style={styles.itemContainer}>
         <Pressable  style={styles.iconContainer}>
-          <Feather name={icon} size={scale(22)} />
+          <Feather name={icon} size={scale(22)}color={appColors.black}  />
         </Pressable>
         <View style={styles.itemInnerContainer}>
           <Label text={lebel} />
