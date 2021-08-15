@@ -27,6 +27,7 @@
     "react-native-simple-stepper": "^3.0.3",
     "react-native-size-matters": "^0.4.0",
     "react-native-star-rating": "^1.1.0",
+    "react-native-step-indicator": "^1.0.3",
     "react-native-stepper-ui": "0.0.9",
     "react-native-svg": "^12.1.1",
     "react-native-swipe-list-view": "^3.2.9",

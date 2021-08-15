@@ -7,12 +7,12 @@ import {appColors} from '../../utils/appColors';
 import Label from '../../components/Label';
 import {profileKeys} from '../../utils/MockData';
 import AvatarImage from '../../components/AvatarImage'
-export default function index() {
+export default function index({navigation}) {
   const ItemCard = ({item}) => {
-    const {lebel, icon,isNew} = item;
+    const {lebel, icon,isNew,route} = item;
     return (
-      <View style={styles.itemContainer}>
-        <Pressable style={styles.iconContainer}>
+      <Pressable onPress={() =>route&& navigation.navigate(route)} style={styles.itemContainer}>
+        <Pressable  style={styles.iconContainer}>
           <Feather name={icon} size={scale(22)} />
         </Pressable>
         <View style={styles.itemInnerContainer}>
@@ -22,7 +22,7 @@ export default function index() {
           </View>}
           <Feather name={"chevron-right"} size={scale(18)} />
         </View>
-      </View>
+      </Pressable>
     );
   };
   return (

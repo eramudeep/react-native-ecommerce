@@ -153,11 +153,13 @@ export const profileKeys=[
   },
   {
     lebel:"Order History",
-    icon:"clock"
+    icon:"clock",
+    route: "Orders"
   },
   {
     lebel:"Track Order",
-    icon:"package"
+    icon:"package",
+    route: "Orders"
   },
   {
     lebel:"Cards",
@@ -171,4 +173,37 @@ export const profileKeys=[
     lebel:"Sign Out",
     icon:"log-out"
   }
+]
+
+export const orderList =[
+  {
+    label:"OD - 424923192 - N",
+    amount:"$3453",
+    status:"Delivered",
+    color:"primary"
+  },
+  {
+    label:"OD - 424923192 - N",
+    amount:"$3503",
+    status:"Delivered",
+    color:"primary"
+  },
+  {
+    label:"OD - 424923192 - N",
+    amount:"$4453",
+    status:"Delivered",
+    color:"primary"
+  }, 
+  /* {
+    label:"",
+    amount:"",
+    status:"",
+    color:""
+  },
+  {
+    label:"",
+    amount:"",
+    status:"",
+    color:""
+  } */
 ]
