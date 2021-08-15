@@ -171,7 +171,8 @@ export const profileKeys=[
   },
   {
     lebel:"Sign Out",
-    icon:"log-out"
+    icon:"log-out",
+    route: "Login"
   }
 ]
 
