@@ -22,7 +22,7 @@ function Home({addToCart$,navigation}) {
   };
   return (
     <Container isScrollable style={styles.container}>
-      <SearchBox />
+      <SearchBox  onFoucs={()=>  navigation.navigate('Search') }/> 
       <View style={{paddingVertical: scale(30)}}>
         <RenderTitle heading="Categories" />
         <FlatList

@@ -24,7 +24,7 @@ export default function ScreenHeader({
         <Feather name={backIcon ? backIcon : 'chevron-left'} size={scale(25)} />
       </Pressable>
 
-      <Label text={label} style={{fontWeight: '500', fontSize: scale(22)}} />
+      <Label text={label} style={{fontWeight: '500', fontSize: scale(21)}} />
 
       {showSearch && (
         <View
@@ -39,6 +39,9 @@ export default function ScreenHeader({
           <Feather name={rightIcon ? rightIcon :"search"} size={scale(20)} color={appColors.white} />
         </View>
       )}
+      {
+        !showSearch &&<View />
+      }
     </View>
   );
 }

@@ -7,7 +7,7 @@ import {scale} from 'react-native-size-matters';
 import {appColors} from '../../utils/appColors';
 import Label from '../../components/Label';
 import CustomButton from '../../components/CustomButton';
-export default function index() {
+export default function index({navigation}) {
   return (
     <KeyboardAvoidingView style={{flex:1}}>
       <Container
@@ -110,7 +110,7 @@ export default function index() {
             paddingHorizontal: scale(20),
             paddingVertical: scale(30),
           }}>
-          <CustomButton label="CHECKOUT" />
+          <CustomButton label="CHECKOUT" onPress={()=> navigation.navigate("CheckOutSteper")} />
         </View>
       </Container>
     </KeyboardAvoidingView>
