@@ -17,9 +17,8 @@ export default function index() {
     }
     return (
         <Container>
-            <ScreenHeader label="WishList" />
-            <Text>WishList</Text>
-            <FlatList ItemSeparatorComponent={()=> <View style={{padding:scale(10)}} />}  data={bestSellersList} renderItem={({item,index})=> <CheckOutItem hideSteper renderBagge={renderBagge}  {...item}/>} />
+            <ScreenHeader label="WishList" /> 
+            <FlatList ItemSeparatorComponent={()=> <View style={{padding:scale(10)}} />}  data={bestSellersList} renderItem={({item,index})=> <CheckOutItem noBg hideSteper renderBagge={renderBagge}  {...item}/>} />
         </Container>
     )
 }
