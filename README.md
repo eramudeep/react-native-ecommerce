@@ -10,8 +10,8 @@ A starter boilerplate for a ecommerce mobile app using React Native and Redux.
 
 ## ❤️ Support us
 - `Donate (Eth) : 021A827e911350a7133ac494F3D7D2281e0B75F9` 
-## Screens
-![Welcome](/screens-shots/Welcome.jpg?raw=true "Welcome Screen")
+## Screens Recording
+![Video](/screens-shots/video_.gif?raw=true "Run time Video")
 
 ## Requirements
 - [Node](https://nodejs.org) `6.x` or newer
