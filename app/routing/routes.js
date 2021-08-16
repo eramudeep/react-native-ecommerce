@@ -17,6 +17,8 @@ import CheckoutDelivery from '../screens/Checkout/CheckoutDelivery';
 import CheckOutSteper from '../screens/Checkout/CheckOutSteper';
 import Summary from '../screens/Summary';
 import Account from '../screens/Account';
+import WishList from '../screens/WishList';
+
 import Orders from '../screens/Orders';
 import Address from '../screens/Address';
 import Feather from 'react-native-vector-icons/dist/Feather';
@@ -242,6 +244,18 @@ export const RoutesList = [
       //tabBarVisible: false,
       //tabBarBadge: 3,
       tabBarLabel: 'Address',
+      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
+    },
+  },
+
+  {
+    name: 'WishList',
+    component: WishList,
+    options: {
+      tabBarButton: (props) => null,
+      //tabBarVisible: false,
+      //tabBarBadge: 3,
+      tabBarLabel: 'WishList',
       //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
     },
   },

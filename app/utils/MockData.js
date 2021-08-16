@@ -151,6 +151,7 @@ export const profileKeys=[
     lebel:"Wishlist",
     icon:"heart",
     isNew:true,
+    route :"WishList"
   },
   {
     lebel:"Order History",

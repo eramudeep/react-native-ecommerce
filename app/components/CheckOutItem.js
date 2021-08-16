@@ -5,7 +5,7 @@ import {appColors} from '../utils/appColors';
 import Label from './Label';
 import {SimpleStepper} from 'react-native-simple-stepper';
 
-export default function CheckOutItem({noBg, image, name, price}) {
+export default function CheckOutItem({ renderBagge, hideSteper,noBg, image, name, price}) {
   return (
     <View
       style={{
@@ -38,7 +38,7 @@ export default function CheckOutItem({noBg, image, name, price}) {
             color: appColors.primary,
           }}
         />
-        <SimpleStepper
+        {!hideSteper&& <SimpleStepper
           containerStyle={{
             backgroundColor: appColors.lightGray,
             flexDirection: 'row',
@@ -55,7 +55,8 @@ export default function CheckOutItem({noBg, image, name, price}) {
           showText
           renderText={() => <Label text="1" />}
           separatorStyle={{}} 
-        />
+        />}
+        {renderBagge&&renderBagge()}
       </View>
     </View>
   );
