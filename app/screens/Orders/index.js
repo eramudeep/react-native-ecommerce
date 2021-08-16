@@ -42,11 +42,12 @@ export default function index({navigation}) {
         </View>
         <View>
           <FlatList
-          nestedScrollEnabled
+           
+            nestedScrollEnabled
             ItemSeparatorComponent={() => <View style={{padding: scale(2)}} />}
             data={[1, 2, 3, 4]}
             numColumns={2}
-            keyExtractor={(item) => item}
+            keyExtractor={(item) => `${item}_${new Date().getTime()}_${item}`}
             renderItem={({item}) => (
               <View
                 key={item}
@@ -65,7 +66,7 @@ export default function index({navigation}) {
     );
   };
   return (
-    <Container isScrollable>
+    <Container  >
       <ScreenHeader navigation={navigation} label="Track Order" />
       <View style={{paddingVertical: scale(20)}}>
         <Label
@@ -90,6 +91,8 @@ export default function index({navigation}) {
       </View>
 
       <FlatList
+      
+      keyExtractor={(item)=> `${item.label}_${new Date().getTime()}_${item.amount}`}
         ItemSeparatorComponent={() => <View style={{padding: scale(5)}} />}
         data={orderList}
         renderItem={({item, index}) => <OrderCard key={index} item={item} />}

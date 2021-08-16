@@ -144,7 +144,8 @@ export const profileKeys=[
   },
   {
     lebel:"Shipping Address",
-    icon:"map-pin"
+    icon:"map-pin",
+    route:"Address"
   },
   {
     lebel:"Wishlist",
@@ -177,6 +178,12 @@ export const profileKeys=[
 ]
 
 export const orderList =[
+  {
+    label: 'AMU - 9249296 - N',
+    amount: '$3503',
+    status: 'In transit',
+    color: 'yellow',
+  },
   {
     label:"OD - 424923192 - N",
     amount:"$3453",

@@ -18,7 +18,7 @@ import CheckOutSteper from '../screens/Checkout/CheckOutSteper';
 import Summary from '../screens/Summary';
 import Account from '../screens/Account';
 import Orders from '../screens/Orders';
-
+import Address from '../screens/Address';
 import Feather from 'react-native-vector-icons/dist/Feather';
 import {appColors} from '../utils/appColors';
 import {scale} from 'react-native-size-matters';
@@ -234,7 +234,18 @@ export const RoutesList = [
       //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
     },
   },
+  {
+    name: 'Address',
+    component: Address,
+    options: {
+      tabBarButton: (props) => null,
+      //tabBarVisible: false,
+      //tabBarBadge: 3,
+      tabBarLabel: 'Address',
+      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
+    },
+  },
 
-
+  
   
 ];

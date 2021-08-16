@@ -4,14 +4,9 @@ import {scale} from 'react-native-size-matters';
 import Feather from 'react-native-vector-icons/Feather';
 import {appColors} from '../utils/appColors';
 import Label from './Label';
-
-export default function ScreenHeader({
-  navigation,
-  backIcon,
-  rightIcon,
-  label,
-  showSearch,
-}) {
+import {useNavigation} from '@react-navigation/native';
+export default function ScreenHeader({backIcon, rightIcon, label, showSearch}) {
+  const navigation = useNavigation();
   return (
     <View
       style={{
@@ -20,7 +15,7 @@ export default function ScreenHeader({
         alignItems: 'center',
         paddingVertical: scale(20),
       }}>
-      <Pressable onPress={() => navigation.goBack()} style={{   }}>
+      <Pressable onPress={() => navigation.goBack()} style={{}}>
         <Feather name={backIcon ? backIcon : 'chevron-left'} size={scale(25)} />
       </Pressable>
 
@@ -36,12 +31,14 @@ export default function ScreenHeader({
             alignItems: 'center',
             borderRadius: scale(25),
           }}>
-          <Feather name={rightIcon ? rightIcon :"search"} size={scale(20)} color={appColors.white} />
+          <Feather
+            name={rightIcon ? rightIcon : 'search'}
+            size={scale(20)}
+            color={appColors.white}
+          />
         </View>
       )}
-      {
-        !showSearch &&<View />
-      }
+      {!showSearch && <View />}
     </View>
   );
 }
