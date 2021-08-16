@@ -7,7 +7,8 @@ A starter boilerplate for a ecommerce mobile app using React Native and Redux.
 
 ## Web
 - [Amusoftech](https://amusoftech.com/) `Visit us`
-
+## Buy me a coffee
+-[Buy](https://www.buymeacoffee.com/amusoftech)
 ## ❤️ Support us
 - `Donate (Eth) : 021A827e911350a7133ac494F3D7D2281e0B75F9` 
 ## Screens Recording
