@@ -7,7 +7,7 @@ import Label from './Label';
 export default function ProductCard({navigation, item}) {
   const {name, description, price, image, isNew} = item;
   return (
-    <Pressable onPress={() => navigation.navigate('ProductDetails')} style={{}}>
+    <Pressable onPress={() => navigation.navigate('ProductDetails',{item})} style={{}}>
       <View
         style={{
           height: scale(200),

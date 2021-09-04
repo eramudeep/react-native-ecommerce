@@ -13,11 +13,13 @@ import BottomButtons from '../../components/BottomButtons';
 import {connect} from 'react-redux';
 import {addToCart} from '../../redux/cartAction';
 
-function index({cartItems ,addToCart$, navigation}) {
-  const {name, detail, price, size, color, image, isFav} = productDetail;
-  console.warn({cartItems});
+function index({cartItems ,addToCart$, navigation,route:{params}}) {
+  //item
+    
+  const {name, detail, price, size, color, image, isFav} = params.item;
+  //console.warn({cartItems});
   const onAddToCart = () => {
-    addToCart$(productDetail);
+    addToCart$({...params.item, quantity:1});
   };
   const _renderBottom = () => {
     return (

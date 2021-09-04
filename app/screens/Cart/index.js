@@ -24,7 +24,7 @@ function index({cartItems ,navigation}) {
           <SwipeListView
             keyExtractor={(item) => `${item.name}_${new Date().getTime()}`}
             ItemSeparatorComponent={() => <View style={{padding: scale(10)}} />}
-            data={[cartItems]  || []}
+            data={[...cartItems]  || []}
             renderItem={({item, index}) => <ItemCard item={item} />}
             renderHiddenItem={(data, rowMap) => (
               <View

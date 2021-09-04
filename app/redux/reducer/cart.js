@@ -11,7 +11,7 @@ const {type, payload} =action
         case ADD_TO_CART: 
        return  {
             ...state,
-            cartItems :  payload
+            cartItems : [...state.cartItems, payload]
         }
     
         default:
