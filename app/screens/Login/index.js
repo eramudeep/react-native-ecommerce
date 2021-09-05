@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {View, Text, Pressable} from 'react-native';
 import {scale} from 'react-native-size-matters';
 import Container from '../../components/Container';
@@ -6,12 +6,35 @@ import CustomInput from '../../components/CustomInput';
 import CustomButton from '../../components/CustomButton';
 import Label from '../../components/Label';
 import {appColors, shadow} from '../../utils/appColors';
+import auth from '@react-native-firebase/auth';
+import { AlertHelper } from '../../utils/AlertHelper';
+import { CommonActions } from '@react-navigation/native';
+
 
 export default function index({navigation}) {
-  const onLogin  =()=>{
-   return navigation.navigate("Home")
-    
-  }
+  const [credentials, setCredentials] = useState({});
+
+  const onLogin = async () => {
+    //auth().signOut()
+    const {email, password} = credentials;
+    try {
+      const user = await auth().signInWithEmailAndPassword(
+        email?.toLowerCase(),
+        password?.toLowerCase(),
+      );
+      if (user?.user?.uid) {
+        AlertHelper.show("success","Welcome to Amusoftech")
+        navigation.navigate("Home")
+      }
+    } catch (error) {
+      AlertHelper.show("error","Something went woring")
+    }
+  };
+
+  const onChangeText = (name, text) => {
+    setCredentials({...credentials, [name]: text});
+  };
+
   return (
     <Container isScrollable>
       <View
@@ -32,7 +55,7 @@ export default function index({navigation}) {
             text="Welcome,"
             style={{fontSize: scale(30), fontWeight: '700'}}
           />
-          <Pressable onPress={()=> navigation.navigate("SignUp")}>
+          <Pressable onPress={() => navigation.navigate('SignUp')}>
             <Label
               text="Sign Up"
               style={{
@@ -55,6 +78,7 @@ export default function index({navigation}) {
         </View>
         <View style={{paddingVertical: scale(10)}}>
           <CustomInput
+            onChangeText={(text) => onChangeText('email', text)}
             keyboardType="email-address"
             label="Email"
             placeholder="john@doe.com"
@@ -62,14 +86,15 @@ export default function index({navigation}) {
         </View>
         <View style={{paddingVertical: scale(10)}}>
           <CustomInput
+            onChangeText={(text) => onChangeText('password', text)}
             secureTextEntry
             label="Password"
             placeholder="Password"
-            value="*******"
+            // value="*******"
           />
         </View>
         <Pressable
-        onPress={()=>navigation.navigate("Verification")}
+          onPress={() => navigation.navigate('Verification')}
           style={{
             flexDirection: 'row',
             justifyContent: 'flex-end',
@@ -99,7 +124,12 @@ export default function index({navigation}) {
           }}
         />
       </View>
-      <CustomButton onPress={onLogin} icon="facebook" label="Sign in" unFilled />
+      <CustomButton
+        onPress={onLogin}
+        icon="facebook"
+        label="Sign in"
+        unFilled
+      />
       <CustomButton onPress={onLogin} icon="twitter" label="Sign in" unFilled />
     </Container>
   );

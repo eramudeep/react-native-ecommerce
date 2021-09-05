@@ -12,8 +12,11 @@ import {scale} from 'react-native-size-matters';
 import SearchBox from '../../components/SearchBox';
 import TitleComp from '../../components/TitleComp';
 import {connect} from 'react-redux';
-
+import auth from '@react-native-firebase/auth';
 function Home({addToCart$,navigation}) {
+  useEffect(() => {
+     //auth().signOut()
+  }, [])
   const RenderTitle = ({heading, rightLabel}) => {
     return <TitleComp heading={heading} rightLabel={rightLabel} />;
   };

@@ -4,10 +4,8 @@
  */
 import React from 'react';
 import Home from '../screens/Home';
-import Login from '../screens/Login';
-import SignUp from '../screens/SignUp';
 import ProductDetails from '../screens/ProductDetails';
-import Verification from '../screens/Verification';
+
 import WriteReview from '../screens/WriteReview';
 import Cart from '../screens/Cart';
 import Checkout from '../screens/Checkout';
@@ -27,40 +25,7 @@ import {scale} from 'react-native-size-matters';
 import Category from '../screens/Category';
 
 export const RoutesList = [
-  {
-    name: 'Login',
-    component: Login,
-    options: {
-      tabBarButton: (props) => null,
-      tabBarVisible: false,
-      tabBarBadge: 3,
-      tabBarLabel: 'Login',
-      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
-    },
-  },
-  {
-    name: 'SignUp',
-    component: SignUp,
-    options: {
-      tabBarButton: (props) => null,
-      tabBarVisible: false,
-      tabBarBadge: 3,
-      tabBarLabel: 'SignUp',
-      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
-    },
-  },
-
-  {
-    name: 'Verification',
-    component: Verification,
-    options: {
-      tabBarButton: (props) => null,
-      tabBarVisible: false,
-      tabBarBadge: 3,
-      tabBarLabel: 'Verification',
-      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
-    },
-  },
+ 
   {
     name: 'Home',
     component: Home,
@@ -75,7 +40,6 @@ export const RoutesList = [
         />
       ),
       tabBarLabel: 'Home',
-      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
     },
   },
   {
@@ -92,7 +56,6 @@ export const RoutesList = [
         />
       ),
       tabBarLabel: 'Cart',
-      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
     },
   },
 
@@ -104,7 +67,6 @@ export const RoutesList = [
       tabBarVisible: false,
       tabBarBadge: 3,
       tabBarLabel: 'ProductDetails',
-      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
     },
   },
 
@@ -116,7 +78,6 @@ export const RoutesList = [
       tabBarVisible: false,
       tabBarBadge: 3,
       tabBarLabel: 'WriteReview',
-      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
     },
   },
 
@@ -128,7 +89,6 @@ export const RoutesList = [
       //tabBarVisible:false,
       //tabBarBadge: 3,
       tabBarLabel: 'Checkout',
-      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
     },
   },
 
@@ -140,7 +100,6 @@ export const RoutesList = [
       tabBarVisible: false,
       //tabBarBadge: 3,
       tabBarLabel: 'Category',
-      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
     },
   },
 
@@ -152,7 +111,6 @@ export const RoutesList = [
       tabBarVisible: false,
       //tabBarBadge: 3,
       tabBarLabel: 'Filters',
-      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
     },
   },
 
@@ -164,7 +122,6 @@ export const RoutesList = [
       //tabBarVisible: false,
       //tabBarBadge: 3,
       tabBarLabel: 'Search',
-      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
     },
   },
 
@@ -176,7 +133,6 @@ export const RoutesList = [
       tabBarVisible: false,
       //tabBarBadge: 3,
       tabBarLabel: 'CheckoutDelivery',
-      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
     },
   },
 
@@ -188,7 +144,6 @@ export const RoutesList = [
       tabBarVisible: false,
       //tabBarBadge: 3,
       tabBarLabel: 'CheckOutSteper',
-      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
     },
   },
 
@@ -200,17 +155,14 @@ export const RoutesList = [
       tabBarVisible: false,
       //tabBarBadge: 3,
       tabBarLabel: 'Summary',
-      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
     },
   },
 
-
-  
   {
     name: 'Account',
     component: Account,
     options: {
-     // tabBarButton: (props) => null,
+      // tabBarButton: (props) => null,
       //tabBarVisible: false,
       //tabBarBadge: 3,
       tabBarIcon: (props) => (
@@ -222,7 +174,6 @@ export const RoutesList = [
         />
       ),
       tabBarLabel: 'Account',
-      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
     },
   },
   {
@@ -233,7 +184,6 @@ export const RoutesList = [
       //tabBarVisible: false,
       //tabBarBadge: 3,
       tabBarLabel: 'Orders',
-      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
     },
   },
   {
@@ -244,7 +194,6 @@ export const RoutesList = [
       //tabBarVisible: false,
       //tabBarBadge: 3,
       tabBarLabel: 'Address',
-      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
     },
   },
 
@@ -256,10 +205,6 @@ export const RoutesList = [
       //tabBarVisible: false,
       //tabBarBadge: 3,
       tabBarLabel: 'WishList',
-      //.... rest are the params for Tab.Screen See : https://reactnavigation.org/docs/bottom-tab-navigator/#options
     },
   },
-
-  
-  
 ];

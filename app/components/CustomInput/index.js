@@ -35,6 +35,7 @@ export default function CustomInput({
       <TextInput
         placeholder={placeholder}
         value={value}
+         
         onChangeText={onChangeText}
         secureTextEntry={secureTextEntry}
         keyboardType={keyboardType}
