@@ -6,12 +6,21 @@ import Feather from 'react-native-vector-icons/Feather';
 import {appColors} from '../../utils/appColors';
 import Label from '../../components/Label';
 import {profileKeys} from '../../utils/MockData';
-import AvatarImage from '../../components/AvatarImage'
+import AvatarImage from '../../components/AvatarImage' 
+import auth from '@react-native-firebase/auth';
+//auth().signOut()
 export default function index({navigation}) {
+
+  const onLogout = ()=>{ 
+     auth().signOut()
+  }
   const ItemCard = ({item}) => {
     const {lebel, icon,isNew,route} = item;
     return (
-      <Pressable onPress={() =>route&& navigation.navigate(route)} style={styles.itemContainer}>
+      <Pressable onPress={() =>{
+        route=="Login"&& onLogout()
+        route&& navigation.navigate(route) 
+        }} style={styles.itemContainer}>
         <Pressable  style={styles.iconContainer}>
           <Feather name={icon} size={scale(22)}color={appColors.black}  />
         </Pressable>
