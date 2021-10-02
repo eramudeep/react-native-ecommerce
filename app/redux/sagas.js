@@ -1,5 +1,6 @@
 import {  all } from "redux-saga/effects"
 import { workerGetError } from "./saga/errorSaga"
+import { watcherGetProducts } from "./saga/productSaga"
 
 
 //1 worker saga
@@ -14,6 +15,7 @@ export function* watchLoadMenu() {
 //single entry point to start all sagas
 export default function* rootSaga() {
   yield all([
-    workerGetError()
+    workerGetError(),
+    watcherGetProducts()
   ])
 }

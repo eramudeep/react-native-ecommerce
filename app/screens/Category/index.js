@@ -10,7 +10,10 @@ import Feather from 'react-native-vector-icons/Feather';
 import {appColors} from '../../utils/appColors';
 import BottomButtons from '../../components/BottomButtons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-export default function index({navigation, route: {params}}) {
+import ReduxWrapper from '../../utils/ReduxWrapper';
+
+function index({productList,navigation, route: {params}}) {
+  console.warn({productList});
   const _renderHeader = () => {
     return (
       <View
@@ -89,3 +92,4 @@ export default function index({navigation, route: {params}}) {
     </>
   );
 }
+export default ReduxWrapper(index)

@@ -22,6 +22,7 @@ export default function index({navigation}) {
         email?.toLowerCase(),
         password?.toLowerCase(),
       );
+      console.log(user);
       if (user?.user?.uid) {
         AlertHelper.show("success","Welcome to Amusoftech")
         navigation.navigate("Home")

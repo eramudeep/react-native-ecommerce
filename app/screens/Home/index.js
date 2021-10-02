@@ -13,7 +13,9 @@ import SearchBox from '../../components/SearchBox';
 import TitleComp from '../../components/TitleComp';
 import {connect} from 'react-redux';
 import auth from '@react-native-firebase/auth';
-function Home({addToCart$,navigation}) {
+import ReduxWrapper from '../../utils/ReduxWrapper';
+
+function Home({getProducts$, addToCart$,navigation}) {
   useEffect(() => {
      //auth().signOut()
   }, [])
@@ -39,7 +41,10 @@ function Home({addToCart$,navigation}) {
             return (
               <View key={index} style={{alignItems: 'center'}}>
                 <TouchableRipple
-                  onPress={() => navigation.navigate('Category', {item})}
+                  onPress={() => {
+                    getProducts$(label)
+                    navigation.navigate('Category', {item})
+                  }}
                   rippleColor={appColors.primary}
                   rippleContainerBorderRadius={scale(40)}
                   rippleDuration={800}
@@ -80,15 +85,8 @@ function Home({addToCart$,navigation}) {
     </Container>
   );
 }
-
-const mapStateToProps = (state) => ({
-//no needed yet
-});
-const mapDispatchToProps = {
-  addToCart$:addToCart
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+ 
+ export default ReduxWrapper(Home)
 const styles = StyleSheet.create({
   container: {
     flex: 1,
