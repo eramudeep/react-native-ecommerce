@@ -14,6 +14,7 @@ import TitleComp from '../../components/TitleComp';
 import {connect} from 'react-redux';
 import auth from '@react-native-firebase/auth';
 import ReduxWrapper from '../../utils/ReduxWrapper';
+import TestComp from '../../components/TestComp';
 
 function Home({getProducts$, addToCart$,navigation}) {
   useEffect(() => {
@@ -25,9 +26,13 @@ function Home({getProducts$, addToCart$,navigation}) {
   const ProductCard = ({item}) => {
     return <Product navigation={navigation} item={item} />;
   };
+  const onPress= ()=>{
+    console.warn("i am clicked");
+  }
   return (
     <Container isScrollable style={styles.container}>
-      <SearchBox  onFoucs={()=>  navigation.navigate('Search') }/> 
+       
+        <SearchBox  onFoucs={()=>  navigation.navigate('Search') }/> 
       <View style={{paddingVertical: scale(30)}}>
         <RenderTitle heading="Categories" />
         <FlatList
@@ -81,7 +86,7 @@ function Home({getProducts$, addToCart$,navigation}) {
             <ProductCard key={index} item={item} />
           )}
         />
-      </View>
+      </View>  
     </Container>
   );
 }

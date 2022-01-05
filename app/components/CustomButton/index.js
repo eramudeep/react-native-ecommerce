@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, ActivityIndicator} from 'react-native';
 import {scale} from 'react-native-size-matters';
 import {appColors} from '../../utils/appColors';
 import TouchableRipple from 'react-native-touch-ripple';
@@ -11,6 +11,7 @@ export default function index({
   style,
   onPress,
   labelStyle,
+  isLoading
 }) {
   return (
     <TouchableRipple
@@ -25,14 +26,17 @@ export default function index({
           color={unFilled ? appColors.black : appColors.white}
         />
       )}
-      <Text
+     {!isLoading? <Text
         style={[
           styles.label,
           unFilled ? styles.unFilledLabel : {},
           labelStyle,
         ]}>
         {`${label}`.toUpperCase()}
-      </Text>
+      </Text> : 
+      <ActivityIndicator size={"large"} />
+
+      }
     </TouchableRipple>
   );
 }

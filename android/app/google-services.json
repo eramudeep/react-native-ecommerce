@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1015972329649",
+    "project_id": "annusoftech-shop",
+    "storage_bucket": "annusoftech-shop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015972329649:android:df303a5d4b182eac908a90",
+        "android_client_info": {
+          "package_name": "com.amusoftech.shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015972329649-kdmpvmdagf6f3ndqnmqqpp7svgoe699e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDzOuazdeLBe2QcUc8H7oPea5nobqiXbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1015972329649-kdmpvmdagf6f3ndqnmqqpp7svgoe699e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1015972329649-qmuhvbcu5kl345e59njn82djgr6t8uf8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.amusoftech.shop"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
