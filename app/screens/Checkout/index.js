@@ -20,6 +20,7 @@ export default function index({navigation}) {
         <View
           style={{paddingHorizontal: scale(20), paddingVertical: scale(20)}}>
           <FlatList
+          showsVerticalScrollIndicator={false}
             data={bestSellersList}
             ItemSeparatorComponent={() => <View style={{padding: scale(10)}} />}
             renderItem={({item, index}) => (

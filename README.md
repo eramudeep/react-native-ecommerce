@@ -1,5 +1,25 @@
 # React-Native-Ecommerce
 A starter boilerplate for a ecommerce mobile app using React Native and Redux.
+## Features
+- Login
+- Signup
+- Cart (List)
+- Add To Cart
+- Remove Cart
+- Category
+- Best Selling
+- Payment Processor (RazorPay)
+- Profile
+- Filters
+- Product Review
+- Multiple Shipping address
+- Order History
+- Wish List (With Redux)
+- Search (Coming soon)
+
+See [Getting Started](https://facebook.github.io/react-native/docs/getting-started.html) to install requirement tools.
+
+
 ## YouTube
 - [Subscribe](https://www.youtube.com/channel/UCtyZ9z0ulUQsyP-wLrNyJ4A) `Subscribe for more`
 ## Instagram

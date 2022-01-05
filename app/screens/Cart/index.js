@@ -22,6 +22,7 @@ function index({cartItems ,navigation}) {
       <Container>
         <View style={{flex: 1, paddingVertical: scale(30)}}>
           <SwipeListView
+          showsVerticalScrollIndicator={false}
             keyExtractor={(item) => `${item.name}_${new Date().getTime()}`}
             ItemSeparatorComponent={() => <View style={{padding: scale(10)}} />}
             data={[...cartItems]  || []}
