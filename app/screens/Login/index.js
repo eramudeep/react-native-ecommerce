@@ -7,28 +7,38 @@ import CustomButton from '../../components/CustomButton';
 import Label from '../../components/Label';
 import {appColors, shadow} from '../../utils/appColors';
 import auth from '@react-native-firebase/auth';
-import { AlertHelper } from '../../utils/AlertHelper';
-import { CommonActions } from '@react-navigation/native';
+import {AlertHelper} from '../../utils/AlertHelper';
+import {CommonActions} from '@react-navigation/native';
+import ReduxWrapper from '../../redux/ReduxWrapper';
 
-
-export default function index({navigation}) {
+function index({loginUser$, navigation}) {
   const [credentials, setCredentials] = useState({});
+  const [isloading, setisloading] = useState(false)
 
   const onLogin = async () => {
     //auth().signOut()
     const {email, password} = credentials;
+
     try {
-      const user = await auth().signInWithEmailAndPassword(
-        email?.toLowerCase(),
-        password?.toLowerCase(),
-      );
-      console.log(user);
-      if (user?.user?.uid) {
-        AlertHelper.show("success","Welcome to Amusoftech")
-        navigation.navigate("Home")
+        if(email && password){
+          setisloading(true)
+          const user = await auth().signInWithEmailAndPassword(
+          email?.toLowerCase(),
+          password?.toLowerCase(),
+        );
+        console.log(user);
+        if (user?.user?.uid) {
+          loginUser$({email:user?.user?.email, name: user?.user?.displayName ? user?.user?.displayName : "User", uid: user?.user?.uid } );
+          AlertHelper.show('success', 'Welcome to Amusoftech');
+          navigation.navigate('Home');
+        }
+      }else{
+        setisloading(false)
+        AlertHelper.show('error', 'Email and password is required!!');
       }
+      
     } catch (error) {
-      AlertHelper.show("error","Something went woring")
+      AlertHelper.show('error', 'Something went woring');
     }
   };
 
@@ -109,7 +119,7 @@ export default function index({navigation}) {
             }}
           />
         </Pressable>
-        <CustomButton onPress={onLogin} label="Sign in" />
+        <CustomButton isLoading={isloading}  onPress={onLogin} label="Sign in" />
       </View>
       <View
         style={{
@@ -131,7 +141,9 @@ export default function index({navigation}) {
         label="Sign in"
         unFilled
       />
-      <CustomButton onPress={onLogin} icon="twitter" label="Sign in" unFilled />
+      <CustomButton    onPress={onLogin} icon="twitter" label="Sign in" unFilled />
     </Container>
   );
 }
+
+export default ReduxWrapper(index);

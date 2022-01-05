@@ -34,7 +34,7 @@ export default function index({
         ]}>
         {`${label}`.toUpperCase()}
       </Text> : 
-      <ActivityIndicator size={"large"} />
+      <ActivityIndicator size={"large"} color={appColors.white} />
 
       }
     </TouchableRipple>
