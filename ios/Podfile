@@ -6,7 +6,8 @@ platform :ios, '10.0'
 target 'Amusoftech' do
   config = use_native_modules!
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
-
+  pod 'Google-Mobile-Ads-SDK'
+  pod 'GoogleMobileAdsMediationFacebook'
   use_react_native!(:path => config["reactNativePath"])
 
   target 'AmusoftechTests' do

@@ -22,6 +22,7 @@
     "@react-navigation/stack": "^5.12.8",
     "react": "^17.0.1",
     "react-native": "^0.63.4",
+    "react-native-admob-native-ads": "^0.5.0",
     "react-native-dropdownalert": "^4.3.0",
     "react-native-gesture-handler": "^1.9.0",
     "react-native-picker-select": "^8.0.4",

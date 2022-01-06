@@ -1,8 +1,10 @@
 # React-Native-Ecommerce
-A starter boilerplate for a ecommerce mobile app using React Native and Redux.
+A boilerplate for a ecommerce mobile app using React Native and Redux.
+IOs and Android
 ## Features
 - Login
 - Signup
+- Recover Account
 - Cart (List)
 - Add To Cart
 - Remove Cart
@@ -11,14 +13,12 @@ A starter boilerplate for a ecommerce mobile app using React Native and Redux.
 - Payment Processor (RazorPay)
 - Profile
 - Filters
-- Product Review
+- Product Review (Listing)
+- Write Product Review
 - Multiple Shipping address
 - Order History
 - Wish List (With Redux)
-- Search (Coming soon)
-
-See [Getting Started](https://facebook.github.io/react-native/docs/getting-started.html) to install requirement tools.
-
+- Search (Coming soon) 
 
 ## YouTube
 - [Subscribe](https://www.youtube.com/channel/UCtyZ9z0ulUQsyP-wLrNyJ4A) `Subscribe for more`
@@ -80,7 +80,7 @@ See [Getting Started](https://facebook.github.io/react-native/docs/getting-start
 On the command prompt run the following commands
 
 ```sh
-$ git clone https://github.com/noddy1996/react-native-redux-starter.git
+$ git clone https://github.com/eramudeep/react-native-ecommerce.git
 
 $ cd react-native-redux-starter/
 
