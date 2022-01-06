@@ -18,6 +18,7 @@ IOs and Android
 - Multiple Shipping address
 - Order History
 - Wish List (With Redux)
+- Google Ads (Replace your app id in : AndroidManifest.xml and info.plist) 
 - Search (Coming soon) 
 
 ## YouTube

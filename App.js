@@ -19,8 +19,8 @@ import {navigationTypeTabs} from './app.json';
 import Feather from 'react-native-vector-icons/Feather'; 
 import Ionicons from 'react-native-vector-icons/Ionicons'; 
 import FontAwesome from 'react-native-vector-icons/FontAwesome'; 
- 
-
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons'; 
+MaterialIcons.loadFont()
 Ionicons.loadFont()
 FontAwesome.loadFont()
 Feather.loadFont()
