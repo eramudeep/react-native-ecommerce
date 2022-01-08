@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useRef, useEffect, useState} from 'react';
 import {StyleSheet, Text, View, FlatList, Image, Pressable} from 'react-native';
 import {} from 'react-native-gesture-handler';
 import {categoriesList, bestSellersList} from '../../utils/MockData';
@@ -7,7 +7,7 @@ import TouchableRipple from 'react-native-touch-ripple';
 import Label from '../../components/Label';
 import Container from '../../components/Container';
 import Product from '../../components/ProductCard';
-import {addToCart} from '../../redux/cartAction'
+import {addToCart} from '../../redux/cartAction';
 import {scale} from 'react-native-size-matters';
 import SearchBox from '../../components/SearchBox';
 import TitleComp from '../../components/TitleComp';
@@ -15,24 +15,37 @@ import {connect} from 'react-redux';
 import auth from '@react-native-firebase/auth';
 import ReduxWrapper from '../../utils/ReduxWrapper';
 import TestComp from '../../components/TestComp';
-
-function Home({getProducts$, addToCart$,navigation}) {
+import NativeAdView from 'react-native-admob-native-ads';
+import {ANDROID_FULL_PAGE_AD_ID} from '../../utils/appConfig';
+function Home({getProducts$, addToCart$, navigation}) {
+  const nativeAdViewRef = useRef();
   useEffect(() => {
-     //auth().signOut()
-  }, [])
+    //auth().signOut()
+    nativeAdViewRef.current?.loadAd();
+  }, [nativeAdViewRef]);
+  console.log({nativeAdViewRef});
   const RenderTitle = ({heading, rightLabel}) => {
     return <TitleComp heading={heading} rightLabel={rightLabel} />;
   };
   const ProductCard = ({item}) => {
     return <Product navigation={navigation} item={item} />;
   };
-  const onPress= ()=>{
-    console.warn("i am clicked");
-  }
+  const onPress = () => {
+    console.warn('i am clicked');
+  };
   return (
     <Container isScrollable style={styles.container}>
-       
-        <SearchBox  onFoucs={()=>  navigation.navigate('Search') }/> 
+      <NativeAdView
+        style={{height: scale(100), width:'100%'}}
+        ref={nativeAdViewRef}
+        enableTestMode
+        onAdLoaded={()=> console.log("add loaded")}
+        onAdFailedToLoad={(err)=> console.log("add loaded",err)}
+        adUnitID={ /* ANDROID_FULL_PAGE_AD_ID */"ca-app-pub-3940256099942544/3986624511" } 
+         
+        /> 
+      <SearchBox onFoucs={() => navigation.navigate('Search')} />
+
       <View style={{paddingVertical: scale(30)}}>
         <RenderTitle heading="Categories" />
         <FlatList
@@ -47,8 +60,8 @@ function Home({getProducts$, addToCart$,navigation}) {
               <View key={index} style={{alignItems: 'center'}}>
                 <TouchableRipple
                   onPress={() => {
-                    getProducts$(label)
-                    navigation.navigate('Category', {item})
+                    getProducts$(label);
+                    navigation.navigate('Category', {item});
                   }}
                   rippleColor={appColors.primary}
                   rippleContainerBorderRadius={scale(40)}
@@ -86,12 +99,12 @@ function Home({getProducts$, addToCart$,navigation}) {
             <ProductCard key={index} item={item} />
           )}
         />
-      </View>  
+      </View>
     </Container>
   );
 }
- 
- export default ReduxWrapper(Home)
+
+export default ReduxWrapper(Home);
 const styles = StyleSheet.create({
   container: {
     flex: 1,

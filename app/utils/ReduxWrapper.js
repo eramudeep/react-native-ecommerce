@@ -1,15 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
-import {addToCart} from '../redux/cartAction';
+import {addToCart,removeFromCart} from '../redux/cartAction';
 import {getProducts} from '../redux/productAction';
 export const mapStateToProps = (state) => ({
-    productList: state.products.products
+    productList: state.products.products,
+    auth: state.auth ,
+   cart: state.cart
 });
 
 export const mapDispatchToProps = {
   addToCart$: addToCart,
+  removeFromCart$:removeFromCart,
   getProducts$: getProducts,
+
 };
 
 export const hocComponentName = (WrappedComponent) => {

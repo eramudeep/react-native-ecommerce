@@ -11,8 +11,14 @@ import {SwipeListView} from 'react-native-swipe-list-view';
 import Feather from 'react-native-vector-icons/Feather';
 import CheckOutItem from '../../components/CheckOutItem';
 import {connect} from 'react-redux';
+import ReduxWrapper from '../../utils/ReduxWrapper';
 
-function index({cartItems ,navigation}) {
+function index({removeFromCart$,cart:{cartItems} ,navigation}) {
+
+ const onDeletePress = (item)=>{
+//console.log({item});
+removeFromCart$(item?.name)
+ } 
   const ItemCard = ({item}) => {
     const {name, description, price, image} = item;
     return ( <CheckOutItem name={name} image={image} price={price} /> );
@@ -25,7 +31,7 @@ function index({cartItems ,navigation}) {
           showsVerticalScrollIndicator={false}
             keyExtractor={(item) => `${item.name}_${new Date().getTime()}`}
             ItemSeparatorComponent={() => <View style={{padding: scale(10)}} />}
-            data={[...cartItems]  || []}
+            data={cartItems || []}
             renderItem={({item, index}) => <ItemCard item={item} />}
             renderHiddenItem={(data, rowMap) => (
               <View
@@ -51,6 +57,7 @@ function index({cartItems ,navigation}) {
                   />
                 </Pressable>
                 <Pressable
+                onPress={()=>onDeletePress(data?.item)}
                   style={{
                     left: scale(15),
                     flex: scale(0.3),
@@ -78,11 +85,12 @@ function index({cartItems ,navigation}) {
     </>
   );
 }
-
+/* 
 const mapStateToProps = (state) => ({
   cartItems : state.cart.cartItems
 });
 const mapDispatchToProps = { 
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(index);
+export default connect(mapStateToProps, mapDispatchToProps)(index); */
+export default ReduxWrapper(index)

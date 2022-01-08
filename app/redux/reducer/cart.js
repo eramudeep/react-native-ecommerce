@@ -1,4 +1,4 @@
-import { ADD_TO_CART } from "../cartAction"; //action
+import { ADD_TO_CART,REMOVE_FROM_CART } from "../cartAction"; //action
 
 const intiialState = {
     cartItems :[] // multiple
@@ -13,7 +13,16 @@ const {type, payload} =action
             ...state,
             cartItems : [...state.cartItems, payload]
         }
-    
+    case REMOVE_FROM_CART:
+        const itemsLeft = state.cartItems?.filter((item,index)=>{
+              if(item?.name !=  payload)
+              return item
+        })
+        console.log({itemsLeft});
+        return {
+            ...state,
+            cartItems : [...itemsLeft]
+        }
         default:
             return state
     }
