@@ -13,12 +13,24 @@ import CheckOutItem from '../../components/CheckOutItem';
 import {connect} from 'react-redux';
 import ReduxWrapper from '../../utils/ReduxWrapper';
 
-function index({removeFromCart$,cart:{cartItems} ,navigation}) {
+function index({wishList:{wishItemNames},removeToWishList$, addToWishList$,removeFromCart$,cart:{cartItems} ,navigation}) {
+ console.log({wishItemNames});
+ const onDeletePress = (item)=>{ 
+  removeFromCart$(item?.name)
+ }
+ const isInWishList = (item)=>{
+  return wishItemNames?.includes( item?.name)
+ }
+ const onAddToWishListPress = (item)=>{ 
+   if(!isInWishList(item) ){
+    addToWishList$(item)
+   }else{
+    removeToWishList$(item?.name)
+   }
+    
+ }
+ 
 
- const onDeletePress = (item)=>{
-//console.log({item});
-removeFromCart$(item?.name)
- } 
   const ItemCard = ({item}) => {
     const {name, description, price, image} = item;
     return ( <CheckOutItem name={name} image={image} price={price} /> );
@@ -42,6 +54,7 @@ removeFromCart$(item?.name)
                   alignItems: 'center',
                 }}>
                 <Pressable
+                  onPress={()=>onAddToWishListPress(data?.item)}
                   style={{
                     left: scale(-15),
                     flex: scale(0.3),
@@ -51,9 +64,9 @@ removeFromCart$(item?.name)
                     alignItems: 'center',
                   }}>
                   <Feather
-                    name={'star'}
+                    name={'star' }
                     size={scale(25)}
-                    color={appColors.white}
+                    color={isInWishList(data?.item) ? appColors.primary :  appColors.white}
                   />
                 </Pressable>
                 <Pressable
