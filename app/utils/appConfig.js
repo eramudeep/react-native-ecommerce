@@ -2,6 +2,9 @@ export const ANDROID_APP_ID= "ca-app-pub-6766214386933283~7422509112"
 export const ANDROID_FULL_PAGE_AD_ID=  "ca-app-pub-6766214386933283/6078294395"
 
 
+export const APP_CURRENY={
+    symbol:"$"
+}
 /*
 
 App Open	ca-app-pub-3940256099942544/5662855259

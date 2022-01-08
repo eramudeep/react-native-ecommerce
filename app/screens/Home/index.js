@@ -35,15 +35,15 @@ function Home({getProducts$, addToCart$, navigation}) {
   };
   return (
     <Container isScrollable style={styles.container}>
-      <NativeAdView
+     {/*  <NativeAdView
         style={{height: scale(100), width:'100%'}}
         ref={nativeAdViewRef}
         enableTestMode
         onAdLoaded={()=> console.log("add loaded")}
         onAdFailedToLoad={(err)=> console.log("add loaded",err)}
-        adUnitID={ /* ANDROID_FULL_PAGE_AD_ID */"ca-app-pub-3940256099942544/3986624511" } 
+        adUnitID={  ANDROID_FULL_PAGE_AD_ID   } 
          
-        /> 
+        />  */}
       <SearchBox onFoucs={() => navigation.navigate('Search')} />
 
       <View style={{paddingVertical: scale(30)}}>

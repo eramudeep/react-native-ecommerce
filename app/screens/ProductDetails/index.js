@@ -12,10 +12,11 @@ import ReviewComp from '../../components/ReviewComp';
 import BottomButtons from '../../components/BottomButtons';
 import {connect} from 'react-redux';
 import {addToCart} from '../../redux/cartAction';
+import ReduxWrapper from '../../utils/ReduxWrapper';
 
-function index({cartItems ,addToCart$, navigation,route:{params}}) {
+function index({wishList:{wishItemNames}, cart:{ cartItems },addToWishList$,addToCart$, navigation,route:{params}}) {
   //item
-    
+    console.log({wishItemNames});
   const {name, detail, price, size, color, image, isFav} = params.item;
   //console.warn({cartItems});
   const onAddToCart = () => {
@@ -58,6 +59,7 @@ function index({cartItems ,addToCart$, navigation,route:{params}}) {
               </Pressable>
 
               <Pressable
+                onPress={()=>addToWishList$(params.item)}
                 style={{
                   borderRadius: scale(25),
                   backgroundColor: appColors.white,
@@ -66,7 +68,7 @@ function index({cartItems ,addToCart$, navigation,route:{params}}) {
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                <Feather name="star" size={scale(20)} color={appColors.black} />
+                <Feather name="star" size={scale(20)} color={wishItemNames?.includes(name )? appColors.primary : appColors.black} />
               </Pressable>
             </View>
           </ImageBackground>
@@ -124,15 +126,16 @@ function index({cartItems ,addToCart$, navigation,route:{params}}) {
     </>
   );
 }
-
+/* 
 const mapStateToProps = (state) => ({
    cartItems : state.cart.cartItems
 });
 const mapDispatchToProps = {
   addToCart$: addToCart,
-};
+}; 
+export default connect(mapStateToProps, mapDispatchToProps)(index); */
+export default  ReduxWrapper(index)
 
-export default connect(mapStateToProps, mapDispatchToProps)(index);
 const styles = StyleSheet.create({
   sizeContainer: {
     flex: 0.47,

@@ -12,9 +12,19 @@ import Feather from 'react-native-vector-icons/Feather';
 import CheckOutItem from '../../components/CheckOutItem';
 import {connect} from 'react-redux';
 import ReduxWrapper from '../../utils/ReduxWrapper';
+import { APP_CURRENY } from '../../utils/appConfig';
 
 function index({wishList:{wishItemNames},removeToWishList$, addToWishList$,removeFromCart$,cart:{cartItems} ,navigation}) {
- console.log({wishItemNames});
+
+ const getAmount = ()=>{
+   let amount =0
+   cartItems?.map(item=>{
+     const {price} =item
+     amount+= Number( price.replace("$", ""));
+   })
+   return  `${APP_CURRENY.symbol} ${amount}`
+    
+ }
  const onDeletePress = (item)=>{ 
   removeFromCart$(item?.name)
  }
@@ -93,7 +103,7 @@ function index({wishList:{wishItemNames},removeToWishList$, addToWishList$,remov
         </View> 
       </Container>
       <View style={{backgroundColor: 'red', bottom: scale(-15)}}>
-        <BottomButtons onPress={()=> navigation.navigate("Checkout") } buttonLabel={'CHECKOUT'} price={'$4500'} />
+        <BottomButtons onPress={()=> navigation.navigate("Checkout") } buttonLabel={'CHECKOUT'} price={getAmount()} />
       </View>
     </>
   );
