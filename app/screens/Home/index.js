@@ -19,10 +19,9 @@ import NativeAdView from 'react-native-admob-native-ads';
 import {ANDROID_FULL_PAGE_AD_ID} from '../../utils/appConfig';
 function Home({getProducts$, addToCart$, navigation}) {
   const nativeAdViewRef = useRef();
-  useEffect(() => {
-    //auth().signOut()
+  /* useEffect(() => { 
     nativeAdViewRef.current?.loadAd();
-  }, [nativeAdViewRef]);
+  }, [nativeAdViewRef]); */
   console.log({nativeAdViewRef});
   const RenderTitle = ({heading, rightLabel}) => {
     return <TitleComp heading={heading} rightLabel={rightLabel} />;
@@ -34,18 +33,8 @@ function Home({getProducts$, addToCart$, navigation}) {
     console.warn('i am clicked');
   };
   return (
-    <Container isScrollable style={styles.container}>
-     {/*  <NativeAdView
-        style={{height: scale(100), width:'100%'}}
-        ref={nativeAdViewRef}
-        enableTestMode
-        onAdLoaded={()=> console.log("add loaded")}
-        onAdFailedToLoad={(err)=> console.log("add loaded",err)}
-        adUnitID={  ANDROID_FULL_PAGE_AD_ID   } 
-         
-        />  */}
-      <SearchBox onFoucs={() => navigation.navigate('Search')} />
-
+    <Container isScrollable style={styles.container}> 
+      <SearchBox onFoucs={() => navigation.navigate('Search')} /> 
       <View style={{paddingVertical: scale(30)}}>
         <RenderTitle heading="Categories" />
         <FlatList

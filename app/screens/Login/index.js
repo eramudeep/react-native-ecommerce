@@ -10,11 +10,23 @@ import auth from '@react-native-firebase/auth';
 import {AlertHelper} from '../../utils/AlertHelper';
 import {CommonActions} from '@react-navigation/native';
 import ReduxWrapper from '../../redux/ReduxWrapper';
+import googleLogin from '../../services/googleLogin';
+import writeData from '../../utils/writeData';
 
 function index({loginUser$, navigation}) {
   const [credentials, setCredentials] = useState({});
   const [isloading, setisloading] = useState(false)
 
+  const onGoogleLogin  =async ()=>{
+   const {user,additionalUserInfo} =await googleLogin()
+  const {email,displayName,uid,photoURL} =user
+   if(additionalUserInfo?.isNewUser){
+    const {providerId,profile} =additionalUserInfo
+     //create new user and login
+    await writeData('users',{email , name: displayName  , uid ,photoURL,providerId,profile} )
+   } 
+   loginUser$({email , name: displayName  , uid ,photoURL} );
+  }
   const onLogin = async () => {
     //auth().signOut()
     const {email, password} = credentials;
@@ -22,13 +34,18 @@ function index({loginUser$, navigation}) {
     try {
         if(email && password){
           setisloading(true)
-          const user = await auth().signInWithEmailAndPassword(
+          const {user,additionalUserInfo} = await auth().signInWithEmailAndPassword(
           email?.toLowerCase(),
           password?.toLowerCase(),
         );
         console.log(user);
-        if (user?.user?.uid) {
-          loginUser$({email:user?.user?.email, name: user?.user?.displayName ? user?.user?.displayName : "User", uid: user?.user?.uid } );
+        if (user?.uid) {
+          if(additionalUserInfo?.isNewUser){
+            const {providerId,profile} =additionalUserInfo
+          //create new user and login
+          await writeData('users',{email :user?.email, name: user?.displayName  , uid:user?.uid  ,photoURL : user?.photoURL  ,providerId,profile} )
+          }
+          loginUser$({email:user?.email, name: user?.displayName ? user?.displayName : "User", uid: user?.uid } );
           AlertHelper.show('success', 'Welcome to Amusoftech');
           navigation.navigate('Home');
         }
@@ -136,8 +153,8 @@ function index({loginUser$, navigation}) {
         />
       </View>
       <CustomButton
-        onPress={onLogin}
-        icon="facebook"
+        onPress={onGoogleLogin}
+        icon="google"
         label="Sign in"
         unFilled
       />

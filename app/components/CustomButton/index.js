@@ -3,7 +3,7 @@ import {StyleSheet, Text, View, ActivityIndicator} from 'react-native';
 import {scale} from 'react-native-size-matters';
 import {appColors} from '../../utils/appColors';
 import TouchableRipple from 'react-native-touch-ripple';
-import Feather from 'react-native-vector-icons/Feather';
+import Feather from 'react-native-vector-icons/MaterialCommunityIcons';
 export default function index({
   icon,
   unFilled,

@@ -15,8 +15,7 @@ import {addToCart} from '../../redux/cartAction';
 import ReduxWrapper from '../../utils/ReduxWrapper';
 
 function index({wishList:{wishItemNames}, cart:{ cartItems },addToWishList$,addToCart$, navigation,route:{params}}) {
-  //item
-    console.log({wishItemNames});
+   
   const {name, detail, price, size, color, image, isFav} = params.item;
   //console.warn({cartItems});
   const onAddToCart = () => {
