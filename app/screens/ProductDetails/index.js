@@ -16,7 +16,7 @@ import ReduxWrapper from '../../utils/ReduxWrapper';
 
 function index({wishList:{wishItemNames}, cart:{ cartItems },addToWishList$,addToCart$, navigation,route:{params}}) {
    
-  const {name, detail, price, size, color, image, isFav} = params.item;
+  const {id,title, name,description, detail, price, size, color, image, isFav,rating} = params.item;
   //console.warn({cartItems});
   const onAddToCart = () => {
     addToCart$({...params.item, quantity:1});
@@ -40,7 +40,7 @@ function index({wishList:{wishItemNames}, cart:{ cartItems },addToWishList$,addT
           <ImageBackground
             style={{height: scale(400), width: '100%'}}
             resizeMode="cover"
-            source={require('../../static/images/products/2.png')}>
+            source={{uri:image} }>
             <View
               style={{
                 marginTop: scale(40),
@@ -75,7 +75,7 @@ function index({wishList:{wishItemNames}, cart:{ cartItems },addToWishList$,addT
         <View style={{paddingHorizontal: scale(20), marginBottom: scale(100)}}>
           <View style={{paddingVertical: scale(20)}}>
             <Label
-              text={name}
+              text={title}
               style={{fontWeight: '700', fontSize: scale(30)}}
             />
           </View>
@@ -105,7 +105,7 @@ function index({wishList:{wishItemNames}, cart:{ cartItems },addToWishList$,addT
             <TitleComp heading={'Details'} />
             <View style={{paddingVertical: scale(20)}}>
               <Label
-                text={detail}
+                text={description}
                 style={{fontSize: scale(14), lineHeight: scale(25)}}
               />
             </View>

@@ -21,7 +21,7 @@ function index({wishList:{wishItemNames},removeToWishList$, addToWishList$,remov
    let amount =0
    cartItems?.map(item=>{
      const {price} =item
-     amount+= Number( price.replace("$", ""));
+     amount+= Number( price );
    })
    return  `${APP_CURRENY.symbol} ${amount}`
     
@@ -43,8 +43,8 @@ function index({wishList:{wishItemNames},removeToWishList$, addToWishList$,remov
  
 
   const ItemCard = ({item}) => {
-    const {name, description, price, image} = item;
-    return ( <CheckOutItem name={name} image={image} price={price} /> );
+    const {title, description, price, image} = item;
+    return ( <CheckOutItem name={title} image={image} price={price} /> );
   };
   return (
     <>

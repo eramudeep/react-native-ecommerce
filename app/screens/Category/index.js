@@ -12,8 +12,8 @@ import BottomButtons from '../../components/BottomButtons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import ReduxWrapper from '../../utils/ReduxWrapper';
 
-function index({productList,navigation, route: {params}}) {
-  console.warn({productList});
+function index({products:{products}, productList,navigation, route: {params}}) {
+  //console.warn({productList});
   const _renderHeader = () => {
     return (
       <View
@@ -77,7 +77,7 @@ function index({productList,navigation, route: {params}}) {
             showsVerticalScrollIndicator={false}
             ItemSeparatorComponent={()=> <View style={{padding:scale(10) }} />}
             numColumns={2}
-            data={bestSellersList}
+            data={products}
             renderItem={({item, index}) => (
               <ProductCard
                 key={index}

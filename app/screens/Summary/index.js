@@ -14,7 +14,8 @@ import CheckBox from '../../components/CheckBox';
 import Label from '../../components/Label';
 import {AlertHelper} from '../../utils/AlertHelper';
 import paymentHelper from '../../services/paymentHelper';
-import ReduxWrapper from '../../redux/ReduxWrapper';
+import ReduxWrapper from '../../utils/ReduxWrapper';
+ 
 
 function index(props) { 
   const {auth: {user}, navigation} = props

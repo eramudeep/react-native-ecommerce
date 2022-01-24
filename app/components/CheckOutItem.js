@@ -20,7 +20,7 @@ export default function CheckOutItem({ renderBagge, hideSteper,noBg, image, name
            borderRadius:  scale(noBg ? 5 : 0),
           //backgroundColor:appColors.darkGray
         }}
-        source={image}
+        source={{uri:image} }
       />
 
       <View
@@ -29,7 +29,7 @@ export default function CheckOutItem({ renderBagge, hideSteper,noBg, image, name
           justifyContent: 'space-between',
           paddingVertical: scale(10),
         }}>
-        <Label text={name} style={{fontWeight: '600'}} />
+        <Label text={name?.substring(0,20)} style={{fontWeight: '600' ,}} />
         <Label
           text={price}
           style={{

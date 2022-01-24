@@ -9,11 +9,12 @@ import {appColors, shadow} from '../../utils/appColors';
 import auth from '@react-native-firebase/auth';
 import {AlertHelper} from '../../utils/AlertHelper';
 import {CommonActions} from '@react-navigation/native';
-import ReduxWrapper from '../../redux/ReduxWrapper';
+  
 import googleLogin from '../../services/googleLogin';
 import writeData from '../../utils/writeData';
+import ReduxWrapper from '../../utils/ReduxWrapper';
 
-function index({loginUser$, navigation}) {
+function index({getProductsList$,loginUser$, navigation}) {
   const [credentials, setCredentials] = useState({});
   const [isloading, setisloading] = useState(false)
 
@@ -25,6 +26,7 @@ function index({loginUser$, navigation}) {
      //create new user and login
     await writeData('users',{email , name: displayName  , uid ,photoURL,providerId,profile} )
    } 
+   getProductsList$()
    loginUser$({email , name: displayName  , uid ,photoURL} );
   }
   const onLogin = async () => {
@@ -46,6 +48,7 @@ function index({loginUser$, navigation}) {
           await writeData('users',{email :user?.email, name: user?.displayName  , uid:user?.uid  ,photoURL : user?.photoURL  ,providerId,profile} )
           }
           loginUser$({email:user?.email, name: user?.displayName ? user?.displayName : "User", uid: user?.uid } );
+          getProductsList$()
           AlertHelper.show('success', 'Welcome to Amusoftech');
           navigation.navigate('Home');
         }

@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {addToCart, removeFromCart} from '../redux/cartAction';
-import {getProducts} from '../redux/productAction';
+import {getProducts, getProductsList} from '../redux/productAction';
 import {addToWishList, removeToWishList} from '../redux/wishListAction';
 export const mapStateToProps = (state) => ({
-  productList: state.products.products,
+  products: state.products ,
   auth: state.auth,
   cart: state.cart,
   wishList: state.wishList,
@@ -17,6 +17,7 @@ export const mapDispatchToProps = {
   getProducts$: getProducts,
   addToWishList$: addToWishList,
   removeToWishList$: removeToWishList,
+  getProductsList$:getProductsList
 };
 
 export const hocComponentName = (WrappedComponent) => {

@@ -5,7 +5,8 @@ import {appColors} from '../utils/appColors';
 import Label from './Label';
 
 export default function ProductCard({navigation, item}) {
-  const {name, description, price, image, isNew} = item;
+  const {title,name, description, price, image, isNew,rating} = item;
+  //console.log({item});
   return (
     <Pressable onPress={() => navigation.navigate('ProductDetails',{item})} style={{}}>
       <View
@@ -14,7 +15,10 @@ export default function ProductCard({navigation, item}) {
            width: scale(160),
           //backgroundColor:appColors.lightGray
         }}>
-        <Image source={image} />
+        <Image 
+        resizeMode='contain'
+        style={{height:scale(200), width:scale(180)}} 
+        source={{ uri:image}} />
         {isNew && (
           <View
             style={{
@@ -32,12 +36,12 @@ export default function ProductCard({navigation, item}) {
         )}
       </View>
       <View style={{paddingVertical: scale(3)}}>
-        <Label text={name} style={{fontSize: scale(18), fontWeight: '500'}} />
+        <Label text={title?.substring(0, 20)} style={{fontSize: scale(18), fontWeight: '500'}} />
       </View>
 
       <View style={{paddingVertical: scale(2)}}>
         <Label
-          text={description}
+          text={description?.substring(0, 24)}
           style={{fontSize: scale(13), color: appColors.darkGray}}
         />
       </View>

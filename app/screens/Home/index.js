@@ -17,11 +17,12 @@ import ReduxWrapper from '../../utils/ReduxWrapper';
 import TestComp from '../../components/TestComp';
 import NativeAdView from 'react-native-admob-native-ads';
 import {ANDROID_FULL_PAGE_AD_ID} from '../../utils/appConfig';
-function Home({getProducts$, addToCart$, navigation}) {
+function Home({getProducts$,getProductsList$, addToCart$, navigation,products:{products}}) {
   const nativeAdViewRef = useRef();
-  /* useEffect(() => { 
-    nativeAdViewRef.current?.loadAd();
-  }, [nativeAdViewRef]); */
+    useEffect(() => { 
+    //nativeAdViewRef.current?.loadAd();
+    getProductsList$()
+  }, [/* nativeAdViewRef */]);  
   console.log({nativeAdViewRef});
   const RenderTitle = ({heading, rightLabel}) => {
     return <TitleComp heading={heading} rightLabel={rightLabel} />;
@@ -83,7 +84,7 @@ function Home({getProducts$, addToCart$, navigation}) {
           showsHorizontalScrollIndicator={false}
           ItemSeparatorComponent={() => <View style={{padding: scale(10)}} />}
           horizontal
-          data={bestSellersList}
+          data={products}
           renderItem={({item, index}) => (
             <ProductCard key={index} item={item} />
           )}
