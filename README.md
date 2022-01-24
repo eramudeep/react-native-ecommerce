@@ -1,9 +1,10 @@
 # React-Native-Ecommerce
 A boilerplate for a ecommerce mobile app using React Native and Redux.
 IOs and Android
-## Features
-- Login
+## Features🔥
+- Login 
 - Signup
+- Social Login
 - Recover Account
 - Cart (List)
 - Add To Cart

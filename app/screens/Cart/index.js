@@ -13,6 +13,7 @@ import CheckOutItem from '../../components/CheckOutItem';
 import {connect} from 'react-redux';
 import ReduxWrapper from '../../utils/ReduxWrapper';
 import { APP_CURRENY } from '../../utils/appConfig';
+import Empty from '../../components/Empty';
 
 function index({wishList:{wishItemNames},removeToWishList$, addToWishList$,removeFromCart$,cart:{cartItems} ,navigation}) {
 
@@ -47,9 +48,10 @@ function index({wishList:{wishItemNames},removeToWishList$, addToWishList$,remov
   };
   return (
     <>
-      <Container>
+      <Container >
         <View style={{flex: 1, paddingVertical: scale(30)}}>
           <SwipeListView
+          ListEmptyComponent={()=> <Empty  label={"Your Cart is empty"}/> }
           showsVerticalScrollIndicator={false}
             keyExtractor={(item) => `${item.name}_${new Date().getTime()}`}
             ItemSeparatorComponent={() => <View style={{padding: scale(10)}} />}
