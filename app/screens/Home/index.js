@@ -17,13 +17,15 @@ import ReduxWrapper from '../../utils/ReduxWrapper';
 import TestComp from '../../components/TestComp';
 import NativeAdView from 'react-native-admob-native-ads';
 import {ANDROID_FULL_PAGE_AD_ID} from '../../utils/appConfig';
+import useListners from '../../hooks/useListners';
+ 
 function Home({getProducts$,getProductsList$, addToCart$, navigation,products:{products}}) {
   const nativeAdViewRef = useRef();
     useEffect(() => { 
     //nativeAdViewRef.current?.loadAd();
     getProductsList$()
   }, [/* nativeAdViewRef */]);  
-  console.log({nativeAdViewRef});
+   
   const RenderTitle = ({heading, rightLabel}) => {
     return <TitleComp heading={heading} rightLabel={rightLabel} />;
   };

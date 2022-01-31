@@ -1,5 +1,5 @@
-import React from 'react';
-import {View, Text, FlatList, Pressable} from 'react-native';
+import React,{useState} from 'react';
+import {View, Text, FlatList, Pressable,RefreshControl} from 'react-native';
 import {scale} from 'react-native-size-matters';
 import Container from '../../components/Container';
 import Label from '../../components/Label';
@@ -13,7 +13,17 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import ReduxWrapper from '../../utils/ReduxWrapper';
 
 function index({products:{products}, productList,navigation, route: {params}}) {
-  //console.warn({productList});
+
+   const [refreshing, setRefreshing] = useState(false);
+   const onRefresh = ()=>{
+    setRefreshing(true);
+    //Fetch the products from the server
+    setTimeout(()=>{
+      setRefreshing(false);
+    },2000)
+
+    console.log({refreshing});
+   }
   const _renderHeader = () => {
     return (
       <View
@@ -62,17 +72,20 @@ function index({products:{products}, productList,navigation, route: {params}}) {
   };
   return (
     <>
-      <Container isScrollable>
-        {_renderHeader()}
+      <Container>
+       {/*  {_renderHeader()}
         <View style={{paddingVertical: scale(20)}}>
           <TitleComp heading={'Top Brands'} />
           <View style={{paddingVertical:scale(20)}}>
             
             <FlatList showsHorizontalScrollIndicator={false} ItemSeparatorComponent={()=> <View style={{padding:scale(10)}} /> } horizontal data={topBrands}  renderItem={({item,index})=><BrandCard key={index} item={item}/> } />
           </View>
-        </View>
+        </View> */}
         <View style={{flex: 1, marginBottom:scale(50),   alignItems:'center'}}>
           <FlatList 
+          refreshControl={
+            <RefreshControl colors={[appColors.primary, appColors.secondary]} refreshing={refreshing} onRefresh={onRefresh} />
+          }
             nestedScrollEnabled
             showsVerticalScrollIndicator={false}
             ItemSeparatorComponent={()=> <View style={{padding:scale(10) }} />}
