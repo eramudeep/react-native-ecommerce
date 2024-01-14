@@ -338,11 +338,12 @@ PODS:
     - abseil/base/base_internal
     - abseil/base/config
     - abseil/meta/type_traits
-  - AppAuth (1.4.0):
-    - AppAuth/Core (= 1.4.0)
-    - AppAuth/ExternalUserAgent (= 1.4.0)
-  - AppAuth/Core (1.4.0)
-  - AppAuth/ExternalUserAgent (1.4.0)
+  - AppAuth (1.6.0):
+    - AppAuth/Core (= 1.6.0)
+    - AppAuth/ExternalUserAgent (= 1.6.0)
+  - AppAuth/Core (1.6.0)
+  - AppAuth/ExternalUserAgent (1.6.0):
+    - AppAuth/Core
   - boost-for-react-native (1.63.0)
   - BoringSSL-GRPC (0.0.7):
     - BoringSSL-GRPC/Implementation (= 0.0.7)
@@ -351,7 +352,7 @@ PODS:
     - BoringSSL-GRPC/Interface (= 0.0.7)
   - BoringSSL-GRPC/Interface (0.0.7)
   - DoubleConversion (1.1.6)
-  - FBAudienceNetwork (6.9.0)
+  - FBAudienceNetwork (6.11.0)
   - FBLazyVector (0.63.4)
   - FBReactNativeSpec (0.63.4):
     - Folly (= 2020.01.13.00)
@@ -360,29 +361,29 @@ PODS:
     - React-Core (= 0.63.4)
     - React-jsi (= 0.63.4)
     - ReactCommon/turbomodule/core (= 0.63.4)
-  - Firebase/Auth (8.6.0):
+  - Firebase/Auth (8.8.0):
     - Firebase/CoreOnly
-    - FirebaseAuth (~> 8.6.0)
-  - Firebase/CoreOnly (8.6.0):
-    - FirebaseCore (= 8.6.0)
-  - Firebase/Firestore (8.6.0):
+    - FirebaseAuth (~> 8.8.0)
+  - Firebase/CoreOnly (8.8.0):
+    - FirebaseCore (= 8.8.0)
+  - Firebase/Firestore (8.8.0):
     - Firebase/CoreOnly
-    - FirebaseFirestore (~> 8.6.0)
-  - FirebaseAuth (8.6.0):
+    - FirebaseFirestore (~> 8.8.0)
+  - FirebaseAuth (8.8.0):
     - FirebaseCore (~> 8.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.4)
     - GoogleUtilities/Environment (~> 7.4)
     - GTMSessionFetcher/Core (~> 1.5)
-  - FirebaseCore (8.6.0):
+  - FirebaseCore (8.8.0):
     - FirebaseCoreDiagnostics (~> 8.0)
     - GoogleUtilities/Environment (~> 7.4)
     - GoogleUtilities/Logger (~> 7.4)
-  - FirebaseCoreDiagnostics (8.6.0):
-    - GoogleDataTransport (~> 9.0)
-    - GoogleUtilities/Environment (~> 7.4)
-    - GoogleUtilities/Logger (~> 7.4)
+  - FirebaseCoreDiagnostics (8.15.0):
+    - GoogleDataTransport (~> 9.1)
+    - GoogleUtilities/Environment (~> 7.7)
+    - GoogleUtilities/Logger (~> 7.7)
     - nanopb (~> 2.30908.0)
-  - FirebaseFirestore (8.6.0):
+  - FirebaseFirestore (8.8.0):
     - abseil/algorithm (= 0.20200225.0)
     - abseil/base (= 0.20200225.0)
     - abseil/container/flat_hash_map (= 0.20200225.0)
@@ -405,57 +406,57 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
-  - Google-Mobile-Ads-SDK (8.13.0):
-    - GoogleAppMeasurement (< 9.0, >= 7.0)
+  - Google-Mobile-Ads-SDK (9.14.0):
+    - GoogleAppMeasurement (< 11.0, >= 7.0)
     - GoogleUserMessagingPlatform (>= 1.1)
-  - GoogleAppMeasurement (8.8.0):
-    - GoogleAppMeasurement/AdIdSupport (= 8.8.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.4)
-    - GoogleUtilities/MethodSwizzler (~> 7.4)
-    - GoogleUtilities/Network (~> 7.4)
-    - "GoogleUtilities/NSData+zlib (~> 7.4)"
-    - nanopb (~> 2.30908.0)
-  - GoogleAppMeasurement/AdIdSupport (8.8.0):
-    - GoogleAppMeasurement/WithoutAdIdSupport (= 8.8.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.4)
-    - GoogleUtilities/MethodSwizzler (~> 7.4)
-    - GoogleUtilities/Network (~> 7.4)
-    - "GoogleUtilities/NSData+zlib (~> 7.4)"
-    - nanopb (~> 2.30908.0)
-  - GoogleAppMeasurement/WithoutAdIdSupport (8.8.0):
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.4)
-    - GoogleUtilities/MethodSwizzler (~> 7.4)
-    - GoogleUtilities/Network (~> 7.4)
-    - "GoogleUtilities/NSData+zlib (~> 7.4)"
-    - nanopb (~> 2.30908.0)
-  - GoogleDataTransport (9.1.0):
-    - GoogleUtilities/Environment (~> 7.2)
-    - nanopb (~> 2.30908.0)
+  - GoogleAppMeasurement (10.6.0):
+    - GoogleAppMeasurement/AdIdSupport (= 10.6.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/AdIdSupport (10.6.0):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 10.6.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/WithoutAdIdSupport (10.6.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleDataTransport (9.2.1):
+    - GoogleUtilities/Environment (~> 7.7)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
     - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleMobileAdsMediationFacebook (6.9.0.0):
-    - FBAudienceNetwork (= 6.9.0)
-    - Google-Mobile-Ads-SDK (~> 8.0)
-  - GoogleSignIn (6.0.2):
+  - GoogleMobileAdsMediationFacebook (6.11.0.0):
+    - FBAudienceNetwork (= 6.11.0)
+    - Google-Mobile-Ads-SDK (~> 9.0)
+  - GoogleSignIn (6.1.0):
     - AppAuth (~> 1.4)
     - GTMAppAuth (~> 1.0)
     - GTMSessionFetcher/Core (~> 1.1)
-  - GoogleUserMessagingPlatform (2.0.0)
-  - GoogleUtilities/AppDelegateSwizzler (7.5.2):
+  - GoogleUserMessagingPlatform (2.0.1)
+  - GoogleUtilities/AppDelegateSwizzler (7.11.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
-  - GoogleUtilities/Environment (7.5.2):
+  - GoogleUtilities/Environment (7.11.0):
     - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/Logger (7.5.2):
+  - GoogleUtilities/Logger (7.11.0):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (7.5.2):
+  - GoogleUtilities/MethodSwizzler (7.11.0):
     - GoogleUtilities/Logger
-  - GoogleUtilities/Network (7.5.2):
+  - GoogleUtilities/Network (7.11.0):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (7.5.2)"
-  - GoogleUtilities/Reachability (7.5.2):
+  - "GoogleUtilities/NSData+zlib (7.11.0)"
+  - GoogleUtilities/Reachability (7.11.0):
     - GoogleUtilities/Logger
   - "gRPC-C++ (1.28.2)":
     - "gRPC-C++/Implementation (= 1.28.2)"
@@ -481,18 +482,18 @@ PODS:
     - BoringSSL-GRPC (= 0.0.7)
     - gRPC-Core/Interface (= 1.28.2)
   - gRPC-Core/Interface (1.28.2)
-  - GTMAppAuth (1.2.2):
-    - AppAuth/Core (~> 1.4)
-    - GTMSessionFetcher/Core (~> 1.5)
-  - GTMSessionFetcher/Core (1.7.0)
+  - GTMAppAuth (1.3.1):
+    - AppAuth/Core (~> 1.6)
+    - GTMSessionFetcher/Core (< 3.0, >= 1.5)
+  - GTMSessionFetcher/Core (1.7.2)
   - leveldb-library (1.22.1)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
-  - PromisesObjC (2.0.0)
-  - razorpay-pod (1.1.16)
+  - PromisesObjC (2.2.0)
+  - razorpay-pod (1.3.0)
   - RCTRequired (0.63.4)
   - RCTTypeSafety (0.63.4):
     - FBLazyVector (= 0.63.4)
@@ -661,10 +662,10 @@ PODS:
   - React-jsinspector (0.63.4)
   - react-native-admob-native-ads (0.5.0):
     - React-Core
-  - react-native-razorpay (2.2.8):
+  - react-native-razorpay (2.3.0):
     - razorpay-pod
     - React
-  - react-native-safe-area-context (3.2.0):
+  - react-native-safe-area-context (3.1.9):
     - React-Core
   - React-RCTActionSheet (0.63.4):
     - React-Core/RCTActionSheetHeaders (= 0.63.4)
@@ -730,28 +731,28 @@ PODS:
     - React-Core
   - RNCMaskedView (0.1.10):
     - React
-  - RNFBApp (12.7.4):
-    - Firebase/CoreOnly (= 8.6.0)
+  - RNFBApp (12.9.3):
+    - Firebase/CoreOnly (= 8.8.0)
     - React-Core
-  - RNFBAuth (12.7.4):
-    - Firebase/Auth (= 8.6.0)
+  - RNFBAuth (12.9.3):
+    - Firebase/Auth (= 8.8.0)
     - React-Core
     - RNFBApp
   - RNFBFirestore (12.9.3):
-    - Firebase/Firestore (= 8.6.0)
+    - Firebase/Firestore (= 8.8.0)
     - React-Core
     - RNFBApp
-  - RNGestureHandler (1.10.3):
+  - RNGestureHandler (1.9.0):
     - React-Core
-  - RNGoogleSignin (7.0.4):
-    - GoogleSignIn (~> 6.0.0)
+  - RNGoogleSignin (7.2.2):
+    - GoogleSignIn (~> 6.1.0)
     - React-Core
-  - RNReanimated (1.13.3):
+  - RNReanimated (1.13.2):
     - React-Core
-  - RNScreens (2.18.1):
+  - RNScreens (2.16.1):
     - React-Core
-  - RNSVG (12.1.1):
-    - React
+  - RNSVG (12.5.1):
+    - React-Core
   - RNVectorIcons (8.1.0):
     - React-Core
   - Yoga (1.14.0)
@@ -763,7 +764,7 @@ DEPENDENCIES:
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - Google-Mobile-Ads-SDK
-  - GoogleMobileAdsMediationFacebook
+  - GoogleMobileAdsMediationFacebook (= 6.11.0.0)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
   - React (from `../node_modules/react-native/`)
@@ -914,35 +915,35 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
-  AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
+  AppAuth: 8fca6b5563a5baef2c04bee27538025e4ceb2add
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
   DoubleConversion: cde416483dac037923206447da6e1454df403714
-  FBAudienceNetwork: 83096d73433759c10f9cf9b3bad5e5cff58694cb
+  FBAudienceNetwork: 2eee2f90ecb812ba761949366845d5e5efe7a0a1
   FBLazyVector: 3bb422f41b18121b71783a905c10e58606f7dc3e
   FBReactNativeSpec: f2c97f2529dd79c083355182cc158c9f98f4bd6e
-  Firebase: 21ac9f28b09a8bdfc005f34c984fca84e7e8786d
-  FirebaseAuth: 223adeeb2262b417532e89bf06a960e3a0a1e9e4
-  FirebaseCore: 620b677f70f5470a8e59cb77f3ddc666f6f09785
-  FirebaseCoreDiagnostics: 3721920bde3a9a6d5aa093c1d25e9d3e47f694af
-  FirebaseFirestore: 7b8bd72aff4d3ad91498343e81fdbaa994ce8abe
+  Firebase: 629510f1a9ddb235f3a7c5c8ceb23ba887f0f814
+  FirebaseAuth: bcf0adeff88bda5dcb3beeabe5760f1226ab7b2f
+  FirebaseCore: 98b29e3828f0a53651c363937a7f7d92a19f1ba2
+  FirebaseCoreDiagnostics: 92e07a649aeb66352b319d43bdd2ee3942af84cb
+  FirebaseFirestore: 29baf05d5e7e0d5003eb34e5805d92b9858b36d4
   Folly: b73c3869541e86821df3c387eb0af5f65addfab4
   glog: 40a13f7840415b9a77023fbcae0f1e6f43192af3
-  Google-Mobile-Ads-SDK: 05e5d68bb42a61b2e5bef336a52789785605aa22
-  GoogleAppMeasurement: 5ba1164e3c844ba84272555e916d0a6d3d977e91
-  GoogleDataTransport: 85fd18ff3019bb85d3f2c551d04c481dedf71fc9
-  GoogleMobileAdsMediationFacebook: 74a727b7e4b2113d1203e771ff750a298169bf7e
-  GoogleSignIn: fd381840dbe7c1137aa6dc30849a5c3e070c034a
-  GoogleUserMessagingPlatform: ab890ce5f6620f293a21b6bdd82e416a2c73aeca
-  GoogleUtilities: 8de2a97a17e15b6b98e38e8770e2d129a57c0040
+  Google-Mobile-Ads-SDK: 4fe6304b771f8467d29978cb790ec1e56e646946
+  GoogleAppMeasurement: 686b48c3c895f3c55c70719041913d5d150b74f6
+  GoogleDataTransport: ea169759df570f4e37bdee1623ec32a7e64e67c4
+  GoogleMobileAdsMediationFacebook: d83aecc66aa19e68e4539d47568415ea8aabd80d
+  GoogleSignIn: c90b5bec45e780f54c6a8e1e3c182a86e3dda69d
+  GoogleUserMessagingPlatform: 5f8b30daf181805317b6b985bb51c1ff3beca054
+  GoogleUtilities: c2bdc4cf2ce786c4d2e6b3bcfd599a25ca78f06f
   "gRPC-C++": 13d8ccef97d5c3c441b7e3c529ef28ebee86fad2
   gRPC-Core: 4afa11bfbedf7cdecd04de535a9e046893404ed5
-  GTMAppAuth: ad5c2b70b9a8689e1a04033c9369c4915bfcbe89
-  GTMSessionFetcher: 43748f93435c2aa068b1cbe39655aaf600652e91
+  GTMAppAuth: 0ff230db599948a9ad7470ca667337803b3fc4dd
+  GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
-  PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
-  razorpay-pod: f1763f8ee8f83152837abe7de1cdfbcd4eb035b9
+  PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
+  razorpay-pod: ebc78907f756ace307e3fa4270ff684ebb9e291b
   RCTRequired: 082f10cd3f905d6c124597fd1c14f6f2655ff65e
   RCTTypeSafety: 8c9c544ecbf20337d069e4ae7fd9a377aadf504b
   React: b0a957a2c44da4113b0c4c9853d8387f8e64e615
@@ -954,8 +955,8 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 93bd528844ad21dc07aab1c67cb10abae6df6949
   React-jsinspector: 58aef7155bc9a9683f5b60b35eccea8722a4f53a
   react-native-admob-native-ads: 408060ec533d09c78b78c4dbe897a340ab697b1c
-  react-native-razorpay: b35ef0a8067a725a288d9fb70a356d38d441bbe1
-  react-native-safe-area-context: e471852c5ed67eea4b10c5d9d43c1cebae3b231d
+  react-native-razorpay: 0272dd684bc9148828c54a72e05059e3e2e8b813
+  react-native-safe-area-context: b6e0e284002381d2ff29fa4fff42b4d8282e3c94
   React-RCTActionSheet: 89a0ca9f4a06c1f93c26067af074ccdce0f40336
   React-RCTAnimation: 1bde3ecc0c104c55df246eda516e0deb03c4e49b
   React-RCTBlob: a97d378b527740cc667e03ebfa183a75231ab0f0
@@ -966,19 +967,19 @@ SPEC CHECKSUMS:
   React-RCTText: 5c51df3f08cb9dedc6e790161195d12bac06101c
   React-RCTVibration: ae4f914cfe8de7d4de95ae1ea6cc8f6315d73d9d
   ReactCommon: 73d79c7039f473b76db6ff7c6b159c478acbbb3b
-  RNCAsyncStorage: cb9a623793918c6699586281f0b51cbc38f046f9
-  RNCMaskedView: f5c7d14d6847b7b44853f7acb6284c1da30a3459
-  RNFBApp: 150a5a9f4b4cbadd7be07b08d524bd5cfba9fc7b
-  RNFBAuth: 92b81be442a9fb244537fdcc9d790c5c87bd44a9
-  RNFBFirestore: c79b7eb29ab0ba01c073ee44d5a605dcef1c05fa
-  RNGestureHandler: a479ebd5ed4221a810967000735517df0d2db211
-  RNGoogleSignin: aeb29e549e6748da3e5847516fdd1327c85894c5
-  RNReanimated: 514a11da3a2bcc6c3dfd9de32b38e2b9bf101926
-  RNScreens: f7ad633b2e0190b77b6a7aab7f914fad6f198d8d
-  RNSVG: 551acb6562324b1d52a4e0758f7ca0ec234e278f
+  RNCAsyncStorage: b03032fdbdb725bea0bd9e5ec5a7272865ae7398
+  RNCMaskedView: 5a8ec07677aa885546a0d98da336457e2bea557f
+  RNFBApp: 729c0666395b1953198dc4a1ec6deb8fbe1c302e
+  RNFBAuth: 7718be1152f5d1d0bb970a8d33094d010f1ac21c
+  RNFBFirestore: eef5fd4cfbe35316af559631db06a34b8391628a
+  RNGestureHandler: 9b7e605a741412e20e13c512738a31bd1611759b
+  RNGoogleSignin: d7f8368b82d94f1dec964785d496387ca7f19092
+  RNReanimated: e03f7425cb7a38dcf1b644d680d1bfc91c3337ad
+  RNScreens: 45c457af3d2ee9e08fc01e70da87e653d46b1198
+  RNSVG: d7d7bc8229af3842c9cfc3a723c815a52cdd1105
   RNVectorIcons: 31cebfcf94e8cf8686eb5303ae0357da64d7a5a4
   Yoga: 4bd86afe9883422a7c4028c00e34790f560923d6
 
-PODFILE CHECKSUM: a0654f4c03d3033e40b3081c089f06c1df351e5f
+PODFILE CHECKSUM: 7277167a01d5ec085a326a8417f4347cfff9a4ab
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
