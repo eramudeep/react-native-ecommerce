@@ -2,6 +2,7 @@ import {LOGIN, LOG_OUT} from '../authAction';
 
 const initialState = {
   user: {},
+  isGuest:true
 };
 export default function (state = initialState, action) {
   switch (action.type) {
@@ -9,6 +10,7 @@ export default function (state = initialState, action) {
       return {
         ...state,
         user: action.payload,
+        isGuest:false,
       };
     case LOG_OUT:
       return {

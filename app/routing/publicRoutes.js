@@ -3,7 +3,7 @@ import SignUp from '../screens/SignUp';
 import Verification from '../screens/Verification';
 import Welcome from '../screens/Welcome';
 export const publicRoutes = [
-  {
+  /* {
     name: 'Welcome',
     component: Welcome,
     options: {
@@ -12,7 +12,7 @@ export const publicRoutes = [
       tabBarBadge: 3,
       tabBarLabel: 'Welcome',
     },
-  },
+  }, */
 
   {
     name: 'Login',

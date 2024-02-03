@@ -1,14 +1,16 @@
 import React,{useState,useEffect} from 'react'
 import { View, Text } from 'react-native'
 import auth from '@react-native-firebase/auth';
+import ReduxWrapper from '../../utils/ReduxWrapper';
 
-export default function index({navigation}) {
+function Index({loginUser$,navigation}) {
     const [initializing, setInitializing] = useState(true);
     const [user, setUser] = useState();    
     function onAuthStateChanged(user) { 
       setUser(user);
       if(user){
-        navigation.navigate("Home")
+        loginUser$(user)
+        //navigation.navigate("Home")
       }else{
         navigation.navigate("Login")
       }
@@ -28,3 +30,5 @@ export default function index({navigation}) {
         </View>
     )
 }
+
+export default ReduxWrapper(Index)

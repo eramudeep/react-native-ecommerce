@@ -34,7 +34,8 @@ const App: () => React$Node = () => {
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        {navigationTypeTabs ? <TabNavigationStack/> : <MainStack />} 
+        {/* navigationTypeTabs ? <TabNavigationStack/> : <MainStack /> */} 
+        <MainStack />
         <DropdownAlert
           defaultContainer={{
             padding: 8,
