@@ -6,25 +6,19 @@ import {appColors, shadow} from '../../utils/appColors';
 import TouchableRipple from 'react-native-touch-ripple';
 import Label from '../../components/Label';
 import Container from '../../components/Container';
-import Product from '../../components/ProductCard';
-import {addToCart} from '../../redux/cartAction';
+import Product from '../../components/ProductCard'; 
 import {scale} from 'react-native-size-matters';
 import SearchBox from '../../components/SearchBox';
 import TitleComp from '../../components/TitleComp';
-import {connect} from 'react-redux';
-import auth from '@react-native-firebase/auth';
-import ReduxWrapper from '../../utils/ReduxWrapper';
-import TestComp from '../../components/TestComp';
-import NativeAdView from 'react-native-admob-native-ads';
-import {ANDROID_FULL_PAGE_AD_ID} from '../../utils/appConfig';
-import useListners from '../../hooks/useListners';
+ 
+import ReduxWrapper from '../../utils/ReduxWrapper'; 
  
 function Home({getProducts$,getProductsList$, addToCart$, navigation,products:{products}}) {
   const nativeAdViewRef = useRef();
     useEffect(() => { 
-    //nativeAdViewRef.current?.loadAd();
+   
     getProductsList$()
-  }, [/* nativeAdViewRef */]);  
+  }, [ ]);  
    
   const RenderTitle = ({heading, rightLabel}) => {
     return <TitleComp heading={heading} rightLabel={rightLabel} />;

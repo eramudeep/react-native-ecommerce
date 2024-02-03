@@ -18,7 +18,11 @@ export default function TabNavigationStack({isAuth}) {
   return (
     <NavigationContainer>
       <Tab.Navigator
+      screenOptions={{
+        headerShown:false
+      }}
         tabBarOptions={{
+           
           activeTintColor: appColors.primary,
           inactiveTintColor: appColors.darkGray,
         }}>

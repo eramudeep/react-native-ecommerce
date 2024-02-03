@@ -9,7 +9,9 @@ const Stack = createStackNavigator();
 export default function MainStack() {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown: false}}>
+      <Stack.Navigator screenOptions={{ 
+          headerShown: false,
+        }}>
         {RoutesList?.map((route, key) => {
           const {name, component} = route;
           return <Stack.Screen key={key} name={name} component={component} />;
